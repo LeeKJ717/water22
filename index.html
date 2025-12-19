@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water.com - 물의 모든 것</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: #3b82f6; }
+        }
+        
+        .typing-effect {
+            overflow: hidden;
+            border-right: 3px solid #3b82f6;
+            white-space: nowrap;
+            animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+        }
+        
+        .water-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .wave-animation {
+            animation: wave 3s ease-in-out infinite;
+        }
+        
+        @keyframes wave {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-cyan-50 min-h-screen">
+    <!-- 헤더 -->
+    <header class="water-gradient text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-4xl font-bold mb-4 text-center">Water.com</h1>
+            <div class="text-center">
+                <p id="typing-text" class="text-xl md:text-2xl font-semibold inline-block"></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 네비게이션 -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <ul class="flex flex-wrap justify-center items-center space-x-1 md:space-x-4 py-4">
+                <li><a href="index.html" class="px-4 py-2 rounded-lg bg-blue-500 text-white font-semibold hover:bg-blue-600 transition duration-300">홈</a></li>
+                <li><a href="about.html" class="px-4 py-2 rounded-lg text-gray-700 font-semibold hover:bg-blue-100 transition duration-300">물이란?</a></li>
+                <li><a href="uses.html" class="px-4 py-2 rounded-lg text-gray-700 font-semibold hover:bg-blue-100 transition duration-300">물의 활용</a></li>
+                <li><a href="contact.html" class="px-4 py-2 rounded-lg text-gray-700 font-semibold hover:bg-blue-100 transition duration-300">문의하기</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 메인 컨텐츠 -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="max-w-6xl mx-auto">
+            <!-- 히어로 섹션 -->
+            <section class="text-center mb-16">
+                <div class="wave-animation inline-block mb-6">
+                    <svg class="w-32 h-32 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                    </svg>
+                </div>
+                <h2 class="text-5xl font-bold text-gray-800 mb-4">물의 세계에 오신 것을 환영합니다</h2>
+                <p class="text-xl text-gray-600 mb-8">생명의 근원, 물에 대해 알아보세요</p>
+            </section>
+
+            <!-- 카드 그리드 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl mb-4">💧</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">물의 중요성</h3>
+                    <p class="text-gray-600">인간의 생존에 필수적인 물의 역할과 중요성을 알아봅니다.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl mb-4">🌊</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">물의 순환</h3>
+                    <p class="text-gray-600">자연 속에서 끊임없이 순환하는 물의 여정을 탐구합니다.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl mb-4">💙</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">물 보존</h3>
+                    <p class="text-gray-600">미래를 위한 물 보존의 중요성과 실천 방법을 제시합니다.</p>
+                </div>
+            </div>
+
+            <!-- 정보 섹션 -->
+            <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">물에 대한 흥미로운 사실</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <span class="text-2xl">💧</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-2">지구의 71%는 물</h4>
+                            <p class="text-gray-600">지구 표면의 약 71%가 물로 덮여있지만, 식수로 사용 가능한 물은 전체의 1% 미만입니다.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <span class="text-2xl">🧊</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-2">물의 3가지 상태</h4>
+                            <p class="text-gray-600">물은 고체(얼음), 액체(물), 기체(수증기) 세 가지 상태로 존재할 수 있는 유일한 물질입니다.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <span class="text-2xl">🌍</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-2">인체의 60%는 물</h4>
+                            <p class="text-gray-600">성인 인체의 약 60%가 물로 구성되어 있으며, 뇌는 75%가 물입니다.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <span class="text-2xl">♻️</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-2">물의 재활용</h4>
+                            <p class="text-gray-600">물은 자연적으로 순환하며, 오늘 마신 물의 일부는 공룡이 마셨던 물과 같을 수 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="water-gradient text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg mb-2">© 2024 Water.com - 물의 모든 것</p>
+            <p class="text-sm opacity-90">생명의 근원, 물을 소중히 여깁시다</p>
+        </div>
+    </footer>
+
+    <script>
+        const text = "이제홍 홈페이지 입니다. 방문해주셔서 감사합니다";
+        const typingElement = document.getElementById('typing-text');
+        let i = 0;
+
+        function typeWriter() {
+            if (i < text.length) {
+                typingElement.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            } else {
+                // 타이핑 완료 후 커서 깜빡임 효과 유지
+                typingElement.classList.add('typing-effect');
+            }
+        }
+
+        // 페이지 로드 시 타이핑 효과 시작
+        window.addEventListener('load', () => {
+            setTimeout(typeWriter, 500);
+        });
+    </script>
+</body>
+</html>
+

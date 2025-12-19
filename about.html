@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>물이란? - Water.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .water-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-cyan-50 min-h-screen">
+    <!-- 헤더 -->
+    <header class="water-gradient text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-4xl font-bold mb-2 text-center">Water.com</h1>
+        </div>
+    </header>
+
+    <!-- 네비게이션 -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <ul class="flex flex-wrap justify-center items-center space-x-1 md:space-x-4 py-4">
+                <li><a href="index.html" class="px-4 py-2 rounded-lg text-gray-700 font-semibold hover:bg-blue-100 transition duration-300">홈</a></li>
+                <li><a href="about.html" class="px-4 py-2 rounded-lg bg-blue-500 text-white font-semibold hover:bg-blue-600 transition duration-300">물이란?</a></li>
+                <li><a href="uses.html" class="px-4 py-2 rounded-lg text-gray-700 font-semibold hover:bg-blue-100 transition duration-300">물의 활용</a></li>
+                <li><a href="contact.html" class="px-4 py-2 rounded-lg text-gray-700 font-semibold hover:bg-blue-100 transition duration-300">문의하기</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 메인 컨텐츠 -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">물이란?</h2>
+
+            <!-- 소개 섹션 -->
+            <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="text-center mb-6">
+                    <div class="text-6xl mb-4">💧</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">물의 정의</h3>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    물(H₂O)은 수소와 산소로 이루어진 화합물로, 지구상에서 가장 흔하고 중요한 물질 중 하나입니다. 
+                    물은 생명의 근원이며, 모든 생물체의 생존에 필수적입니다.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    물은 무색, 무취, 무미의 액체로, 상온에서 액체 상태로 존재합니다. 
+                    물의 독특한 성질 덕분에 지구상의 생명체가 번성할 수 있었습니다.
+                </p>
+            </section>
+
+            <!-- 물의 특성 -->
+            <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">물의 특성</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h4 class="font-semibold text-xl text-gray-800 mb-2">💧 보편적 용매</h4>
+                        <p class="text-gray-600">물은 많은 물질을 녹일 수 있어 "만능 용매"라고 불립니다.</p>
+                    </div>
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h4 class="font-semibold text-xl text-gray-800 mb-2">🌡️ 높은 비열</h4>
+                        <p class="text-gray-600">물은 온도 변화에 저항력이 커서 기후 조절에 중요한 역할을 합니다.</p>
+                    </div>
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h4 class="font-semibold text-xl text-gray-800 mb-2">🧊 밀도 특성</h4>
+                        <p class="text-gray-600">얼음은 물보다 밀도가 낮아 수면에 떠서 수중 생물을 보호합니다.</p>
+                    </div>
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h4 class="font-semibold text-xl text-gray-800 mb-2">💪 표면 장력</h4>
+                        <p class="text-gray-600">높은 표면 장력으로 작은 곤충이 물 위를 걸을 수 있습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 물의 순환 -->
+            <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">물의 순환</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-4 p-4 bg-blue-50 rounded-lg">
+                        <div class="text-3xl">☀️</div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-1">증발</h4>
+                            <p class="text-gray-600">태양열에 의해 바다, 호수, 강의 물이 수증기로 변합니다.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4 p-4 bg-blue-50 rounded-lg">
+                        <div class="text-3xl">☁️</div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-1">응결</h4>
+                            <p class="text-gray-600">수증기가 상승하여 구름을 형성합니다.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4 p-4 bg-blue-50 rounded-lg">
+                        <div class="text-3xl">🌧️</div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-1">강수</h4>
+                            <p class="text-gray-600">구름에서 비, 눈, 우박이 내려 지표로 돌아옵니다.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4 p-4 bg-blue-50 rounded-lg">
+                        <div class="text-3xl">🌊</div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-1">유출</h4>
+                            <p class="text-gray-600">강수는 강과 지하수를 통해 다시 바다로 흘러갑니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 물의 중요성 -->
+            <section class="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl shadow-lg p-8 text-white">
+                <h3 class="text-2xl font-bold mb-4 text-center">물의 중요성</h3>
+                <ul class="space-y-3 text-lg">
+                    <li class="flex items-center space-x-3">
+                        <span class="text-2xl">✓</span>
+                        <span>인간의 생존에 필수적 (3일 이상 물 없이는 생존 불가)</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="text-2xl">✓</span>
+                        <span>신진대사와 체온 조절에 필요</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="text-2xl">✓</span>
+                        <span>농업과 산업의 기초 자원</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="text-2xl">✓</span>
+                        <span>에너지 생산과 운송 수단</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="text-2xl">✓</span>
+                        <span>생태계 유지와 환경 보호</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="water-gradient text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg mb-2">© 2024 Water.com - 물의 모든 것</p>
+            <p class="text-sm opacity-90">생명의 근원, 물을 소중히 여깁시다</p>
+        </div>
+    </footer>
+</body>
+</html>
+
