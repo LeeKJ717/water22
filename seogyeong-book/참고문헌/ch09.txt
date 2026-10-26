@@ -1,0 +1,9 @@
+Brandes, U. (2001). A faster algorithm for betweenness centrality. The Journal of Mathematical Sociology, 25(2), 163–177.
+Brughmans, T. (2013). Thinking through networks: A review of formal network methods in archaeology. Journal of Archaeological Method and Theory, 20(4), 623–662.
+Freeman, L. C. (1977). A set of measures of centrality based on betweenness. Sociometry, 40(1), 35–41.
+Knappett, C. (Ed.). (2013). Network analysis in archaeology: New approaches to regional interaction. Oxford University Press.
+Kruskal, J. B. (1964). Multidimensional scaling by optimizing goodness of fit to a nonmetric hypothesis. Psychometrika, 29(1), 1–27.
+Newman, M. E. J. (2010). Networks: An introduction. Oxford University Press.
+Page, L., Brin, S., Motwani, R., & Winograd, T. (1999). The PageRank citation ranking: Bringing order to the web (Technical Report 1999-66). Stanford InfoLab.
+Quenouille, M. H. (1956). Notes on bias in estimation. Biometrika, 43(3–4), 353–360.
+Torgerson, W. S. (1952). Multidimensional scaling: I. Theory and method. Psychometrika, 17(4), 401–419.

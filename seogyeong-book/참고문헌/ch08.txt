@@ -1,0 +1,11 @@
+Dijkstra, E. W. (1959). A note on two problems in connexion with graphs. Numerische Mathematik, 1(1), 269–271.
+Douglas, D. H. (1994). Least cost path in GIS using an accumulated cost surface and slopelines. Cartographica, 31(3), 37–51.
+European Space Agency. (2021). Copernicus global digital elevation model [Data set]. OpenTopography. https://doi.org/10.5069/G9028PQB
+Hart, P. E., Nilsson, N. J., & Raphael, B. (1968). A formal basis for the heuristic determination of minimum cost paths. IEEE Transactions on Systems Science and Cybernetics, 4(2), 100–107.
+Herzog, I. (2014). Least-cost paths: Some methodological issues. Internet Archaeology, 36. https://doi.org/10.11141/ia.36.5
+Llobera, M., & Sluckin, T. J. (2007). Zigzagging: Theoretical insights on climbing strategies. Journal of Theoretical Biology, 249(2), 206–217.
+Minetti, A. E., Moia, C., Roi, G. S., Susta, D., & Ferretti, G. (2002). Energy cost of walking and running at extreme uphill and downhill slopes. Journal of Applied Physiology, 93(3), 1039–1046.
+Tobler, W. (1993). Three presentations on geographical analysis and modeling: Non-isotropic geographic modeling; speculations on the geometry of geography; and global spatial analysis (Technical Report 93-1). National Center for Geographic Information and Analysis.
+동북아역사재단. (연도 미상). 고구려통사 3: 고구려 중기의 정치와 사회 [PDF]. https://www.nahf.or.kr/web/portal/bbs/2457/list
+양정석. (연도 미상). 6장 장안성의 축조와 이거. 고구려통사 5: 고구려 후기 정세 변화와 지배체제 [PDF]. 동북아역사재단. https://www.nahf.or.kr/web/portal/bbs/2457/list
+Wikipedia contributors. (n.d.). Pyongyang. In Wikipedia. https://en.wikipedia.org/wiki/Pyongyang

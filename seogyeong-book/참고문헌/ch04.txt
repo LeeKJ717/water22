@@ -1,0 +1,15 @@
+# 이 장의 인물·이론·연대는 아래 문헌과 쪽을 직접 열어 확인한 것만 쓴다. 확인 경로: 2026-10-24 WebFetch(각 URL). 쪽수·저자 표기에서 확인하지 못한 것은 줄 끝에 적었다.
+Berman, M. L. (2001). *Gazetteer development for the China Historical GIS project*. Harvard Yenching Institute. https://chgis.fairbank.fas.harvard.edu/work/docs/papers/lex_ssha_chicago.pdf
+Chen, P. P.-S. (1976). The entity-relationship model—Toward a unified view of data. *ACM Transactions on Database Systems, 1*(1), 9–36.
+China Historical GIS. (n.d.). *Project history*. Harvard University. https://chgis.fas.harvard.edu/pages/history
+Codd, E. F. (1970). A relational model of data for large shared data banks. *Communications of the ACM, 13*(6), 377–387.
+DBpedia. (n.d.). *Tan Qixiang*. https://dbpedia.org/page/Tan_Qixiang
+EPSG. (n.d.). *WGS 84* (EPSG:4978) [Coordinate reference system]. https://epsg.io/4978
+IEEE Computer Society. (n.d.). *Edgar Frank Codd*. https://history.computer.org/pioneers/codd.html
+Institute for the Study of the Ancient World. (n.d.). *Pleiades: A community-built gazetteer and graph of ancient places*. New York University. https://isaw.nyu.edu/publications/research-reference/pleiades
+National Institute of Standards and Technology. (2012). *Secure hash standard (SHS)* (FIPS PUB 180-4). https://csrc.nist.gov/files/pubs/fips/180-4/final/docs/fips180-4.pdf
+National Institute of Standards and Technology. (2015). *Secure hash standard (SHS)* (FIPS PUB 180-4). U.S. Department of Commerce. https://doi.org/10.6028/NIST.FIPS.180-4
+Patterson, T. (n.d.). *Terms of use* [Natural Earth III]. Shaded Relief. https://www.shadedrelief.com/natural3/pages/use.html
+Peng, R. D. (2011). Reproducible research in computational science. *Science, 334*(6060), 1226–1227. https://doi.org/10.1126/science.1213847
+Wilkinson, M. D., et al. (2016). The FAIR guiding principles for scientific data management and stewardship. *Scientific Data, 3*, Article 160018. https://doi.org/10.1038/sdata.2016.18
+World-Historical Gazetteer Project. (2017, September 15). *World-historical gazetteer project*. https://gis.harvard.edu/blog/world-historical-gazetteer-project.md

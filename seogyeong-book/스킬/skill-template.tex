@@ -1,0 +1,41 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=20mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{fontspec}
+\setmainfont{Noto Serif CJK KR}[Language=Korean]
+\setsansfont{Noto Sans CJK KR}[Language=Korean]
+\setmonofont{Noto Sans CJK KR}
+\XeTeXlinebreaklocale "ko"
+\XeTeXlinebreakskip=0pt plus 1pt
+\usepackage{longtable,booktabs,array,calc}
+\renewcommand{\arraystretch}{1.25}
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{\footnotesize}
+\usepackage{fancyvrb,fvextra}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\setlist{itemsep=2pt,topsep=3pt}
+\usepackage{titlesec}
+\titleformat{\section}{\sffamily\bfseries\Large}{}{0em}{}
+\titleformat{\subsection}{\sffamily\bfseries\large}{}{0em}{}
+\titleformat{\subsubsection}{\sffamily\bfseries}{}{0em}{}
+\providecommand{\tightlist}{\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setcounter{secnumdepth}{0}
+\newenvironment{Shaded}{}{}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}[1]{\small\texttt{#1}}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,fontsize=\footnotesize,commandchars=\\\{\}}
+\newcommand{\KeywordTok}[1]{#1}\newcommand{\NormalTok}[1]{#1}
+\title{$title$}
+\author{$author$}
+\date{}
+\renewcommand{\contentsname}{목차}
+\begin{document}
+\maketitle
+\setcounter{tocdepth}{1}\tableofcontents
+\newpage
+$body$
+\end{document}

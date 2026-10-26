@@ -1,0 +1,327 @@
+\hypertarget{uxad8c-uxbaa9uxcc28uxc548-v1-uxc6d4uxc694uxc77c-uxc791uxc5c5uxc6a9}{%
+\section{2권 목차안 v1 (월요일 작업용)}\label{uxad8c-uxbaa9uxcc28uxc548-v1-uxc6d4uxc694uxc77c-uxc791uxc5c5uxc6a9}}
+
+\textbf{가제:} 《고전 지명을 좌표로 옮기는 분석 실무: 오픈소스, 오픈 데이터셋, 로컬 GPU》 (1권의 부제에 맞춰 ``서경 위치 추정 2권 실행편''으로 부를 수도 있음)
+
+\textbf{한 줄 목적:} 1권에서 손으로 따라 한 네 가지 방법(제약 전파, 지오레퍼런싱, 베이즈 추정, 최소비용경로)을 공개된 도구와 공개된 자료와 한두 장의 GPU로 실제 규모로 돌리는 법을 보이고, 나머지 네 가지 방법을 더한다.
+
+\textbf{대상 독자:} 1권을 읽은 사람, 역사·고전 연구자 가운데 계산을 직접 돌려 보려는 사람, GIS나 데이터 분석을 하는 사람.
+
+\textbf{지키는 규칙(1권과 같음):} 근거만 쓴다(지어낸 출처, 숫자, 인용 금지). 모르면 ``모름'', 원문을 못 봤으면 ``원문 대조 필요''. 증거는 1층 원사료, 2층 판독문과 계측, 3층 연구자 해석으로 나누고 3층은 계산의 입력으로 쓰지 않는다. 한자어는 한국 한자음으로 적고 병음은 괄호 안에만. 인용은 APA 7판. 중학교 2학년 수준의 설명, 그림과 지도를 적극 사용, 쪽수 제한 없음, B5.
+
+\textbf{주의:} 아래에 적은 도구와 자료는 후보이다. 각 자료의 최신 접근 방법, 라이선스, 해상도는 집필 때 공식 문서에서 확인하여 ``자료 출처 대장''에 적은 뒤에 본문에 쓴다. 이 목차안은 그 값을 확인한 것이 아니다.
+
+\hypertarget{uxad8cuxacfc-2uxad8cuxc758-uxc5f0uxacb0}{%
+\subsection{1권과 2권의 연결}\label{uxad8cuxacfc-2uxad8cuxc758-uxc5f0uxacb0}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+1권(방법편)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+2권(실행편)에서 하는 일
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+5장 제약 전파 & 고해상도 격자 위에서 수천 개의 제약을 한꺼번에 계산 \\
+6장 지오레퍼런싱 & 공개 고지도와 위성 자료에서 통제점을 모으고 변환 모형을 대량 비교 \\
+7장 베이즈 추정 & 보정 실험을 수천 개 세계로 늘리고, 표본 추출(MCMC)을 GPU로 가속 \\
+8장 최소비용경로 & 공개 고도 자료(DEM) 위에서 넓은 격자의 경로와 등시간선 계산 \\
+4장 증거 DB & DB를 실제로 설치하고 사료, 좌표, 계산 이력을 적재 \\
+\end{longtable}
+
+\hypertarget{uxbd80-uxc900uxbe44-uxb3c4uxad6cuxc640-uxd658uxacbd}{%
+\subsection{1부 준비: 도구와 환경}\label{uxbd80-uxc900uxbe44-uxb3c4uxad6cuxc640-uxd658uxacbd}}
+
+\hypertarget{uxc7a5-uxc65c-uxb0b4-uxcef4uxd4e8uxd130uxc5d0uxc11c-uxb3ccuxb9acuxb294uxac00}{%
+\subsubsection{1장 왜 내 컴퓨터에서 돌리는가}\label{uxc7a5-uxc65c-uxb0b4-uxcef4uxd4e8uxd130uxc5d0uxc11c-uxb3ccuxb9acuxb294uxac00}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 재현성, 비용, 자료 보관, 오프라인 작업, 라이선스. 클라우드와 로컬의 장단점.
+\item
+  산출물: ``내 연구에 로컬이 맞는가'' 점검표.
+\end{itemize}
+
+\hypertarget{uxc7a5-uxc624uxd508uxc18cuxc2a4-uxb3c4uxad6c-uxc9c0uxb3c4}{%
+\subsubsection{2장 오픈소스 도구 지도}\label{uxc7a5-uxc624uxd508uxc18cuxc2a4-uxb3c4uxad6c-uxc9c0uxb3c4}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: GIS(QGIS, GDAL, PROJ), 수치 계산(Python, NumPy, SciPy), 확률 계산(PyMC, NumPyro 등), 그래프(NetworkX), DB(SQLite와 SpatiaLite, PostgreSQL과 PostGIS), 그림(Matplotlib, Cartopy). 작업마다 어떤 도구를 쓰는지 한 표로.
+\item
+  산출물: 도구 선택표(작업, 후보 도구, 라이선스, 설치 난이도).
+\end{itemize}
+
+\hypertarget{uxc7a5-uxc791uxc5c5-uxd658uxacbd-uxb9ccuxb4e4uxae30}{%
+\subsubsection{3장 작업 환경 만들기}\label{uxc7a5-uxc791uxc5c5-uxd658uxacbd-uxb9ccuxb4e4uxae30}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 설치, 가상환경과 컨테이너, 도구 판 고정, 난수 씨앗 기록, 폴더 구조.
+\item
+  산출물: 한 번에 환경을 만드는 설정 파일과 점검 스크립트.
+\end{itemize}
+
+\hypertarget{uxc7a5-uxc99duxac70-dbuxb97c-uxc2e4uxc81cuxb85c-uxc138uxc6b0uxae30}{%
+\subsubsection{4장 증거 DB를 실제로 세우기}\label{uxc7a5-uxc99duxac70-dbuxb97c-uxc2e4uxc81cuxb85c-uxc138uxc6b0uxae30}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 1권 4장과 부록 C의 스키마를 실제 DB로 만들고, 사료 원문과 좌표를 적재하고 계산 이력을 남기는 도구.
+\item
+  산출물: 적재 스크립트, 빈 DB와 예시 DB.
+\end{itemize}
+
+\hypertarget{uxbd80-uxc624uxd508-uxb370uxc774uxd130uxc14b}{%
+\subsection{2부 오픈 데이터셋}\label{uxbd80-uxc624uxd508-uxb370uxc774uxd130uxc14b}}
+
+\hypertarget{uxc7a5-uxc9c0uxd615uxacfc-uxace0uxb3c4-uxc790uxb8ccdem}{%
+\subsubsection{5장 지형과 고도 자료(DEM)}\label{uxc7a5-uxc9c0uxd615uxacfc-uxace0uxb3c4-uxc790uxb8ccdem}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 공개 DEM 후보(SRTM, Copernicus DEM, ASTER GDEM 등)의 해상도, 오차, 라이선스. 내려받기, 좌표계 변환, 서경 일대 자르기, 경사도 계산.
+\item
+  산출물: 지형 자료 대장과 서경 일대 고도·경사 지도.
+\end{itemize}
+
+\hypertarget{uxc7a5-uxd558uxcc9c-uxd574uxc548-uxc218uxacc4-uxc790uxb8cc}{%
+\subsubsection{6장 하천, 해안, 수계 자료}\label{uxc7a5-uxd558uxcc9c-uxd574uxc548-uxc218uxacc4-uxc790uxb8cc}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 공개 하천·해안선 자료(Natural Earth, HydroSHEDS 등 후보). 현재 하천과 옛 하천의 차이를 어떻게 다룰지.
+\item
+  산출물: 하천 자료 대장과 하천망 지도, 옛 하천 가능성을 적는 표.
+\end{itemize}
+
+\hypertarget{uxc7a5-uxd589uxc815uxad6cuxc5ed-uxc9c0uxba85-uxc0acuxc804-uxc5eduxc0ac-uxc9c0uxb9ac-uxc790uxb8cc}{%
+\subsubsection{7장 행정구역, 지명 사전, 역사 지리 자료}\label{uxc7a5-uxd589uxc815uxad6cuxc5ed-uxc9c0uxba85-uxc0acuxc804-uxc5eduxc0ac-uxc9c0uxb9ac-uxc790uxb8cc}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 공개 지명 사전과 역사 지리 데이터의 후보(GeoNames, Wikidata, 중국역사지리정보 CHGIS 등), 국내 공공 자료. 오늘의 지명과 옛 지명을 잇는 표의 만드는 법.
+\item
+  산출물: 지명 대응표(지명, 출처, 좌표, 확신 정도, 시기).
+\end{itemize}
+
+\hypertarget{uxc7a5-uxace0uxc9c0uxb3c4uxc640-uxc704uxc131-uxc601uxc0c1}{%
+\subsubsection{8장 고지도와 위성 영상}\label{uxc7a5-uxace0uxc9c0uxb3c4uxc640-uxc704uxc131-uxc601uxc0c1}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 공개된 고지도 이미지와 옛 지형도, 위성 영상의 접근 조건. 통제점을 고르고 기록하는 규칙.
+\item
+  산출물: 고지도 목록과 통제점 입력표.
+\end{itemize}
+
+\hypertarget{uxc7a5-uxc0acuxb8cc-uxb9d0uxbb49uxce58uxc640-uxcd9cuxcc98-uxae30uxb85d}{%
+\subsubsection{9장 사료 말뭉치와 출처 기록}\label{uxc7a5-uxc0acuxb8cc-uxb9d0uxbb49uxce58uxc640-uxcd9cuxcc98-uxae30uxb85d}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 공개된 고전 텍스트(위키문헌, 공공 고전 DB 등)에서 원문을 가져올 때의 확인 절차(접근 가능 여부, 약관, 판본). 한문 원문과 번역을 분리해 적재.
+\item
+  산출물: 사료 원문 적재표와 ``자료 출처 대장'' 양식.
+\end{itemize}
+
+\hypertarget{uxbd80-uxb85cuxceec-gpuuxb85c-uxd558uxb294-uxbd84uxc11d}{%
+\subsection{3부 로컬 GPU로 하는 분석}\label{uxbd80-uxb85cuxceec-gpuuxb85c-uxd558uxb294-uxbd84uxc11d}}
+
+\hypertarget{uxc7a5-gpu-uxacc4uxc0b0-uxae30uxcd08}{%
+\subsubsection{10장 GPU 계산 기초}\label{uxc7a5-gpu-uxacc4uxc0b0-uxae30uxcd08}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: CPU와 GPU의 차이, 메모리 용량과 격자 크기의 계산, 배치(한 번에 돌리는 묶음) 설계. 한두 장의 일반 GPU로 어디까지 되는지.
+\item
+  산출물: 격자 크기와 메모리 계산표, 작은 속도 비교 실험.
+\end{itemize}
+
+\hypertarget{uxc7a5-uxbcf4uxc815-uxc2e4uxd5d8uxc744-uxc218uxcc9c-uxac1c-uxc138uxacc4uxb85c}{%
+\subsubsection{11장 보정 실험을 수천 개 세계로}\label{uxc7a5-uxbcf4uxc815-uxc2e4uxd5d8uxc744-uxc218uxcc9c-uxac1c-uxc138uxacc4uxb85c}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 1권 7장의 보정 실험(가상 세계 150개)을 수천 개로 늘리고, 적중률의 오차를 함께 적는 법.
+\item
+  산출물: 대규모 보정 실험 스크립트와 결과 그림.
+\end{itemize}
+
+\hypertarget{uxc7a5-mcmcuxc640-uxbaacuxd14cuxce74uxb97cuxb85cuxc758-uxac00uxc18d}{%
+\subsubsection{12장 MCMC와 몬테카를로의 가속}\label{uxc7a5-mcmcuxc640-uxbaacuxd14cuxce74uxb97cuxb85cuxc758-uxac00uxc18d}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 표본 추출을 병렬로 돌리고, 수렴을 점검하는 법.
+\item
+  산출물: GPU 표본 추출 예제와 수렴 점검표.
+\end{itemize}
+
+\hypertarget{uxc7a5-uxb113uxc740-uxc9c0uxd615-uxc704uxc758-uxcd5cuxc18cuxbe44uxc6a9uxacbduxb85c}{%
+\subsubsection{13장 넓은 지형 위의 최소비용경로}\label{uxc7a5-uxb113uxc740-uxc9c0uxd615-uxc704uxc758-uxcd5cuxc18cuxbe44uxc6a9uxacbduxb85c}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 공개 DEM 위에서 비용 지형 만들기, 등시간선과 경로를 GPU로 계산하기, 해상도에 따른 결과 변화.
+\item
+  산출물: 비용 지형 파이프라인과 해상도별 비교 그림.
+\end{itemize}
+
+\hypertarget{uxc7a5-uxc81cuxc57d-uxc804uxd30cuxc640-uxbca0uxc774uxc988-uxaca9uxc790uxc758-uxace0uxd574uxc0c1uxb3c4uxd654}{%
+\subsubsection{14장 제약 전파와 베이즈 격자의 고해상도화}\label{uxc7a5-uxc81cuxc57d-uxc804uxd30cuxc640-uxbca0uxc774uxc988-uxaca9uxc790uxc758-uxace0uxd574uxc0c1uxb3c4uxd654}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 칸 크기를 줄일 때 결과와 계산량이 어떻게 변하는지. 수천 개 제약의 동시 계산.
+\item
+  산출물: 해상도 민감도 표.
+\end{itemize}
+
+\hypertarget{uxc7a5-uxbcc0uxd658-uxbaa8uxd615uxc758-uxb300uxb7c9-uxbe44uxad50}{%
+\subsubsection{15장 변환 모형의 대량 비교}\label{uxc7a5-uxbcc0uxd658-uxbaa8uxd615uxc758-uxb300uxb7c9-uxbe44uxad50}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 닮음, 아핀, 박판스플라인 등의 변환을 통제점 조합별로 한꺼번에 시험하고, 하나 빼고 맞추기를 병렬로 돌리는 법.
+\item
+  산출물: 변환 모형 비교표.
+\end{itemize}
+
+\hypertarget{uxc7a5-uxbbfcuxac10uxb3c4-uxbd84uxc11duxacfc-uxbd88uxd655uxc2e4uxc131-uxc804uxd30c}{%
+\subsubsection{16장 민감도 분석과 불확실성 전파}\label{uxc7a5-uxbbfcuxac10uxb3c4-uxbd84uxc11duxacfc-uxbd88uxd655uxc2e4uxc131-uxc804uxd30c}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 리의 길이, 방위 폭, 오류 확률 같은 가정을 훑어 결과가 어디서 바뀌는지 보는 법.
+\item
+  산출물: 가정별 결과 변화 지도(어떤 가정이 결과를 가장 흔드는가).
+\end{itemize}
+
+\hypertarget{uxbd80-uxb098uxba38uxc9c0-uxb124-uxac00uxc9c0-uxbc29uxbc95}{%
+\subsection{4부 나머지 네 가지 방법}\label{uxbd80-uxb098uxba38uxc9c0-uxb124-uxac00uxc9c0-uxbc29uxbc95}}
+
+\hypertarget{uxc7a5-uxbc29uxbc95-5-uxadf8uxb798uxd504}{%
+\subsubsection{17장 방법 5: 그래프}\label{uxc7a5-uxbc29uxbc95-5-uxadf8uxb798uxd504}}
+
+\hypertarget{uxc7a5-uxbc29uxbc95-6-uxc9c0uxba85-uxc0acuxc804}{%
+\subsubsection{18장 방법 6: 지명 사전}\label{uxc7a5-uxbc29uxbc95-6-uxc9c0uxba85-uxc0acuxc804}}
+
+\hypertarget{uxc7a5-uxbc29uxbc95-7-uxc9c0uxba85uxc758-uxb73buxc5b8uxc5b4uxd559uxc801-uxb2e8uxc11c}{%
+\subsubsection{19장 방법 7: 지명의 뜻(언어학적 단서)}\label{uxc7a5-uxbc29uxbc95-7-uxc9c0uxba85uxc758-uxb73buxc5b8uxc5b4uxd559uxc801-uxb2e8uxc11c}}
+
+\hypertarget{uxc7a5-uxbc29uxbc95-8-uxad50uxcc28-uxac80uxc99d}{%
+\subsubsection{20장 방법 8: 교차 검증}\label{uxc7a5-uxbc29uxbc95-8-uxad50uxcc28-uxac80uxc99d}}
+
+\begin{itemize}
+\tightlist
+\item
+  각 장은 1권과 같은 틀(직관적 소개, 이론 배경, 선행연구, 맛보기 예제, 서경 적용, 한계, 다음 기법과의 연결)로 쓴다. 기존 원고 9\textasciitilde12장의 내용을 이 틀에 맞춰 옮기고 보강한다.
+\end{itemize}
+
+\hypertarget{uxbd80-uxc6b4uxc601uxacfc-uxacf5uxac1c}{%
+\subsection{5부 운영과 공개}\label{uxbd80-uxc6b4uxc601uxacfc-uxacf5uxac1c}}
+
+\hypertarget{uxc7a5-uxc7acuxd604uxc131-uxafb8uxb7ecuxbbf8-uxb9ccuxb4e4uxae30}{%
+\subsubsection{21장 재현성 꾸러미 만들기}\label{uxc7a5-uxc7acuxd604uxc131-uxafb8uxb7ecuxbbf8-uxb9ccuxb4e4uxae30}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 입력표, 도구 판, 난수 씨앗, 실행 이력을 한 묶음으로 만들어 다른 사람이 같은 결과를 얻게 하는 법.
+\item
+  산출물: 재현성 꾸러미 양식.
+\end{itemize}
+
+\hypertarget{uxc7a5-uxacb0uxacfcuxb97c-uxadf8uxb9acuxb294-uxbc95}{%
+\subsubsection{22장 결과를 그리는 법}\label{uxc7a5-uxacb0uxacfcuxb97c-uxadf8uxb9acuxb294-uxbc95}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 불확실성을 지도 위에 정직하게 그리기, 흑백 인쇄에서 구분되는 그림.
+\item
+  산출물: 지도와 그림 규칙집.
+\end{itemize}
+
+\hypertarget{uxc7a5-uxd55cuxacc4uxc640-uxcc45uxc784}{%
+\subsubsection{23장 한계와 책임}\label{uxc7a5-uxd55cuxacc4uxc640-uxcc45uxc784}}
+
+\begin{itemize}
+\tightlist
+\item
+  다루는 것: 자료 라이선스, 지명의 정치성, 결과를 인용할 때의 주의, 가정이 같은 방법들이 독립이 아니라는 점.
+\item
+  산출물: 공개 전 점검표.
+\end{itemize}
+
+\hypertarget{uxbd80uxb85d}{%
+\subsection{부록}\label{uxbd80uxb85d}}
+
+\begin{itemize}
+\tightlist
+\item
+  A. 도구 설치 가이드(윈도우, 리눅스)
+\item
+  B. 자료 출처 대장 양식과 작성 예
+\item
+  C. GPU 메모리 계산표
+\item
+  D. 코드 모음과 실행 순서
+\item
+  E. 용어집(1권 부록 B에 더함)
+\item
+  F. 선행연구 목록(APA 7판)
+\end{itemize}
+
+\hypertarget{uxc6d4uxc694uxc77cuxc5d0-uxacb0uxc815uxd558uxace0-uxc2dcuxc791uxd560-uxac83}{%
+\subsection{월요일에 결정하고 시작할 것}\label{uxc6d4uxc694uxc77cuxc5d0-uxacb0uxc815uxd558uxace0-uxc2dcuxc791uxd560-uxac83}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{범위 확인.} 4부(나머지 네 가지 방법)를 2권에 넣을지, 3권으로 보낼지. 지금 안은 넣는 것이다.
+\item
+  \textbf{장비 확인.} 분석에 쓸 GPU의 모델과 메모리 용량을 정하고 10장의 기준 장비로 적는다.
+\item
+  \textbf{자료 출처 대장부터 만든다.} 5\textasciitilde9장의 자료마다 접근 방법, 라이선스, 해상도를 공식 문서에서 확인해 대장을 채운다. 대장이 채워진 자료만 본문에 쓴다.
+\item
+  \textbf{코드 공개 방식.} 코드를 책과 함께 어떤 형태로 공개할지(저장소, 압축 파일) 정한다.
+\item
+  \textbf{집필 순서 제안.} 2장(도구 지도)과 3장(환경) → 5장(DEM) → 13장(최소비용경로) 순서로 먼저 쓰면, 1권 8장의 그림을 실제 지형 위에서 다시 그리는 결과가 가장 빨리 나온다.
+\end{enumerate}
+
+\hypertarget{uxc774-uxbaa9uxcc28uxc548uxc5d0uxc11c-uxd655uxc778uxd558uxc9c0-uxbabbuxd55c-uxac83}{%
+\subsection{이 목차안에서 확인하지 못한 것}\label{uxc774-uxbaa9uxcc28uxc548uxc5d0uxc11c-uxd655uxc778uxd558uxc9c0-uxbabbuxd55c-uxac83}}
+
+\begin{itemize}
+\tightlist
+\item
+  각 오픈 데이터셋의 현재 접근 방법, 라이선스, 해상도(공식 문서 확인 필요).
+\item
+  각 도구의 최신 판과 설치 조건(공식 문서 확인 필요).
+\item
+  한 장당 분량과 전체 쪽수(집필하면서 정함).
+\end{itemize}

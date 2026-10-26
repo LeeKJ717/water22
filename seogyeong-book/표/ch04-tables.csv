@@ -1,0 +1,9 @@
+표,내용,핵심 열
+paper,선행 논문(전문·PDF 해시),"doi, title, year, fulltext, technique, region, apa7"
+source_text,사료 원문,"work, juan, original, reading_ko, edition, verified"
+place,지명(시대별 이름),"name_han, name_ko, era, kind"
+place_alias,이표기와 개명,"place_id, name_han, era_from, era_to"
+coord,좌표(출처 필수),"lon, lat, sigma_km, basis, gazetteer, url"
+evidence,사료에서 뽑은 제약,"ev_type, value_lo, value_hi, unit, weight"
+run,기법별 계산 이력,"technique, script_sha256, params_json, result_json"
+geodata,지리 자료와 라이선스,"path, sha256, license, attribution"

@@ -1,0 +1,6 @@
+번호,기록할 내용,기록 위치,바꿀 때의 규칙
+1,"사용 증거의 ev_id 목록, 제외 증거와 이유","run.params_json 안의 evidence, excluded",변경 이유·날짜를 새 run 행에 적고 이전 run은 지우지 않는다(status에 대체됨으로 표시)
+2,"기법별 매개변수, 격자 범위, 해상도",run.params_json 안의 grid,같음
+3,"단위 길이 사전구간, 필사 오류율 ε",run.params_json 안의 prior,같음
+4,"합치기 방식, 가중, 충돌 경보 기준",run.params_json 안의 pooling,같음
+5,H0 지지·기각의 판정 기준,run.params_json 안의 criteria,결과를 본 뒤에는 바꾸지 않는다. 바꾸면 두 기준의 결과를 모두 싣는다

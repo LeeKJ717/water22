@@ -1,0 +1,70 @@
+\documentclass[10pt,openany,twoside]{book}
+\usepackage[paperwidth=182mm,paperheight=257mm,inner=36.4mm,outer=15mm,top=22mm,bottom=26mm,twoside=false]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{fontspec}
+\setmainfont{Noto Serif CJK KR}[Language=Korean]
+\setsansfont{Noto Sans CJK KR}[Language=Korean]
+\setmonofont{Noto Sans CJK KR}
+\XeTeXlinebreaklocale "ko"
+\XeTeXlinebreakskip=0pt plus 1pt
+\usepackage{graphicx,booktabs,array,caption,fancyhdr,titlesec,tocloft,enumitem,setspace,makeidx,xcolor}
+\usepackage[hidelinks,bookmarks=true]{hyperref}
+\usepackage{multicol,etoc,longtable,fvextra,needspace}
+\clubpenalty=10000 \widowpenalty=10000 \displaywidowpenalty=10000
+\fvset{breaklines=true,breakanywhere=true,fontsize=\footnotesize}
+\DefineVerbatimEnvironment{verbatim}{Verbatim}{breaklines=true,breakanywhere=true,fontsize=\footnotesize}
+\makeindex
+\providecommand{\tightlist}{\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}}
+\linespread{1.42}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{3em}
+\raggedbottom
+\captionsetup{font={small,sf},labelfont=bf,labelsep=quad,justification=raggedright,singlelinecheck=false,skip=5pt}
+\renewcommand{\figurename}{그림}
+\renewcommand{\tablename}{표}
+\renewcommand{\contentsname}{목차}
+\renewcommand{\listfigurename}{그림 목록}
+\renewcommand{\listtablename}{표 목록}
+\renewcommand{\indexname}{색인}
+\renewcommand{\thefigure}{\thechapter-\arabic{figure}}
+\renewcommand{\thetable}{\thechapter-\arabic{table}}
+\numberwithin{equation}{chapter}
+\renewcommand{\theequation}{\thechapter.\arabic{equation}}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{1}
+% 장·절 제목
+\titleformat{\chapter}[display]{\sffamily\bfseries}{\Large 제\,\thechapter\,장}{10pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{20pt}{28pt}
+\titleformat{\section}{\sffamily\bfseries\Large}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\sffamily\bfseries\large}{\thesubsection}{0.8em}{}
+\titlespacing*{\section}{0pt}{20pt}{8pt}
+\titlespacing*{\subsection}{0pt}{14pt}{6pt}
+\titleformat{\part}[display]{\sffamily\bfseries\centering}{\Large 제\,\thepart\,부}{12pt}{\Huge}
+% 쪽번호: 모든 쪽 하단 중앙
+\pagestyle{fancy}\fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}}
+% 목차 모양
+\renewcommand{\cftchapfont}{\sffamily\bfseries}
+\renewcommand{\cftpartfont}{\sffamily\bfseries\large}
+\renewcommand{\cftchappresnum}{제\,}
+\renewcommand{\cftchapaftersnum}{\,장\quad}
+\setlength{\cftchapnumwidth}{4.6em}
+\renewcommand{\cftfigpresnum}{그림\,}
+\setlength{\cftfignumwidth}{4.6em}
+\renewcommand{\cfttabpresnum}{표\,}
+\setlength{\cfttabnumwidth}{3.6em}
+% 정의·상자
+\makeatletter\g@addto@macro\UrlBreaks{\do\-\do\_\do\=\do\&\do\%\do\:}\makeatother
+\newenvironment{ref-list}{\begingroup\small\sloppy\emergencystretch=4em\setlength{\parindent}{0pt}\linespread{1.25}}{\endgroup}
+\newcommand{\refitem}[1]{\par\hangindent=1.6em\hangafter=1\noindent #1\par\vspace{2pt}}
+\newcommand{\idx}[1]{#1\index{#1}}
+\newenvironment{keybox}{\par\medskip\noindent\begin{minipage}{\linewidth}\hrule\vspace{5pt}\small\sffamily}{\vspace{4pt}\hrule\end{minipage}\par\medskip}
+\newcommand{\figref}[1]{그림~\ref{fig:#1}}
+\newcommand{\tabref}[1]{표~\ref{tab:#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\begin{document}
+@@FRONT@@
+@@BODY@@
+@@BACK@@
+\end{document}

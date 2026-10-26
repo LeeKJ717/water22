@@ -1,0 +1,24 @@
+# 이 장의 서지는 확인 중이다. 출판사·연도는 도서관 목록(KORMARC·NDL) 대조 전이며, 쪽수 인용은 하지 않는다.
+이병도. (1948). *고려시대의 연구*. 을유문화사.
+이병도. (1976). *한국고대사연구*. 박영사.
+리지린. (1963). *고조선 연구*. 과학원출판사.
+윤내현. (1994). *고조선 연구*. 일지사.
+정약용. (1936). 아방강역고. *여유당전서*: 제6집 지리집. 신조선사. (원저 1811)
+정인보. (1946). *조선사연구* (상). 서울신문사.
+노태돈 (편). (2000). *단군과 고조선사*. 사계절.
+한국학중앙연구원. (n.d.-e). 아방강역고. *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0034316
+이덕일. (2018, 4월 17일). 북한 학계, 15년 논쟁 끝은 '낙랑군=요동설'… 그 중심엔 리지린. *서울신문*. https://www.seoul.co.kr/news/2018/04/17/20180417023009
+Goodchild, M. F., & Hill, L. L. (2008). Introduction to digital gazetteer research. International Journal of Geographical Information Science, 22(10), 1039–1044.
+Mostern, R., & Johnson, I. (2008). From named place to naming event: Creating gazetteers for history. International Journal of Geographical Information Science, 22(10), 1091–1108.
+한국학중앙연구원. (n.d.-a). 구암유고. *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0005900
+한국학중앙연구원. (n.d.-b). 동국지리지. *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0016301
+한국학중앙연구원. (n.d.-c). 묘청. *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0018892
+한국학중앙연구원. (n.d.-d). 신경준. *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0032629
+한국학중앙연구원. (n.d.-f). 안정복. *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0034990
+한국문학번역원. (n.d.). 정약용. *Writers ABC List*. https://library.ltikorea.or.kr/writer/200804
+문화체육관광부. (n.d.). 김정호 (항목명 원문 대조 필요). https://www.mcst.go.kr/kor/s_culture/culture/cultureView.jsp?pSeq=65674
+Encyclopaedia Britannica. (n.d.). Karl Popper. https://www.britannica.com/biography/Karl-Popper
+Wikipedia contributors. (n.d.-a). An essay towards solving a problem in the doctrine of chances. In *Wikipedia*. https://en.wikipedia.org/wiki/An_Essay_Towards_Solving_a_Problem_in_the_Doctrine_of_Chances
+Wikipedia contributors. (n.d.-b). Occam's razor. In *Wikipedia*. https://en.wikipedia.org/wiki/Occam%27s_razor
+Wikipedia contributors. (n.d.-c). Sin Ch'aeho. In *Wikipedia*. https://en.wikipedia.org/wiki/Sin_Ch%27aeho
+Wikipedia contributors. (n.d.-d). The logic of scientific discovery. In *Wikipedia*. https://en.wikipedia.org/wiki/The_Logic_of_Scientific_Discovery

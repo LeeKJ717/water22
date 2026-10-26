@@ -1,0 +1,13 @@
+Bookstein, F. L. (1989). Principal warps: Thin-plate splines and the decomposition of deformations. IEEE Transactions on Pattern Analysis and Machine Intelligence, 11(6), 567–585.
+Duchon, J. (1977). Splines minimizing rotation-invariant semi-norms in Sobolev spaces. In W. Schempp & K. Zeller (Eds.), Constructive theory of functions of several variables (pp. 85–100). Springer.
+Efron, B. (1979). Bootstrap methods: Another look at the jackknife. The Annals of Statistics, 7(1), 1–26.
+Jenny, B., & Hurni, L. (2011). Studying cartographic heritage: Analysis and visualization of geometric distortions. Computers & Graphics, 35(2), 402–411.
+Stone, M. (1974). Cross-validatory choice and assessment of statistical predictions. Journal of the Royal Statistical Society: Series B, 36(2), 111–133.
+Tobler, W. R. (1966). Medieval distortions: The projections of ancient maps. Annals of the Association of American Geographers, 56(2), 351–360.
+Umeyama, S. (1991). Least-squares estimation of transformation parameters between two point patterns. IEEE Transactions on Pattern Analysis and Machine Intelligence, 13(4), 376–380.
+동북아역사재단. (연도 미상). 고구려통사 3: 고구려 중기의 정치와 사회 [PDF]. https://www.nahf.or.kr/web/portal/bbs/2457/list
+양정석. (연도 미상). 6장 장안성의 축조와 이거. 고구려통사 5: 고구려 후기 정세 변화와 지배체제 [PDF]. 동북아역사재단. https://www.nahf.or.kr/web/portal/bbs/2457/list
+Wikipedia contributors. (n.d.-a). Anhak Palace. In Wikipedia. https://en.wikipedia.org/wiki/Anhak_Palace
+Wikipedia contributors. (n.d.-b). Moranbong. In Wikipedia. https://en.wikipedia.org/wiki/Moranbong
+Wikipedia contributors. (n.d.-c). Pyongyang. In Wikipedia. https://en.wikipedia.org/wiki/Pyongyang
+Wikipedia contributors. (n.d.-d). Taesongsan. In Wikipedia. https://en.wikipedia.org/wiki/Taesongsan

@@ -1,0 +1,14 @@
+동북아역사재단. (연도 미상). 고구려통사 3: 고구려 중기의 정치와 사회 [PDF]. https://www.nahf.or.kr/web/portal/bbs/2457/list
+양정석. (연도 미상). 6장 장안성의 축조와 이거. 고구려통사 5: 고구려 후기 정세 변화와 지배체제 [PDF]. 동북아역사재단. https://www.nahf.or.kr/web/portal/bbs/2457/list
+Allen, J. F. (1983). Maintaining knowledge about temporal intervals. *Communications of the ACM, 26*(11), 832–843.
+Dechter, R. (2003). *Constraint processing*. Morgan Kaufmann.
+Jaulin, L., Kieffer, M., Didrit, O., & Walter, É. (2001). *Applied interval analysis*. Springer.
+Mackworth, A. K. (1977). Consistency in networks of relations. *Artificial Intelligence, 8*(1), 99–118.
+Montanari, U. (1974). Networks of constraints: Fundamental properties and applications to picture processing. *Information Sciences, 7*, 95–132.
+Moore, R. E. (1966). *Interval analysis*. Prentice-Hall.
+Moore, R. E., Kearfott, R. B., & Cloud, M. J. (2009). *Introduction to interval analysis*. SIAM.
+Randell, D. A., Cui, Z., & Cohn, A. G. (1992). A spatial logic based on regions and connection. In *Proceedings of the 3rd International Conference on Principles of Knowledge Representation and Reasoning* (pp. 165–176). Morgan Kaufmann.
+Sunaga, T. (1958). Theory of an interval algebra and its application to numerical analysis. *RAAG Memoirs, 2*, 29–46.
+Waltz, D. L. (1975). Understanding line drawings of scenes with shadows. In P. H. Winston (Ed.), *The psychology of computer vision* (pp. 19–91). McGraw-Hill.
+Wikipedia contributors. (n.d.-a). Pyongyang. In Wikipedia. https://en.wikipedia.org/wiki/Pyongyang
+Wikipedia contributors. (n.d.-b). Taesŏngsan. In Wikipedia. https://en.wikipedia.org/wiki/Taesongsan

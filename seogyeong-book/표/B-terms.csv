@@ -1,0 +1,36 @@
+용어,영문,뜻
+제약 만족 문제,constraint satisfaction problem,조건을 모두 만족하는 값을 찾는 문제
+구간 연산,interval arithmetic,구간끼리 사칙연산을 하여 참값이 들어 있음을 보증하는 계산
+의존성 문제,dependency problem,같은 변수를 독립으로 취급하여 구간이 부풀어 오르는 문제
+호 일관성,arc consistency,두 변수 사이 제약으로 불가능한 후보를 지우는 절차
+최대 제약 만족,max-CSP,가장 많은 제약을 만족하는 값을 고르는 방법
+지오레퍼런싱,georeferencing,옛 지도를 현대 좌표에 맞추는 일
+통제점,control point,옛 지도와 현대 좌표 양쪽에서 위치를 아는 점
+박판스플라인,thin-plate spline,휨 에너지가 최소가 되는 매끄러운 변형
+하나 빼고 맞추기,leave-one-out cross-validation,점 하나를 빼고 적합하여 그 점을 얼마나 맞히는지 재는 방법
+부트스트랩,bootstrap,자료를 다시 뽑아 추정값의 흔들림을 보는 방법
+사전분포,prior,증거를 보기 전의 믿음
+우도,likelihood,위치가 맞다면 증거가 나올 확률
+사후분포,posterior,증거를 본 뒤의 믿음
+최고사후밀도 영역,highest posterior density region,확률이 높은 칸부터 모아 만든 영역
+보정,calibration,명목 수준과 실제 적중 비율이 일치하는 정도
+메트로폴리스 방법,Metropolis algorithm,분포에서 표본을 뽑는 무작위 걷기 방법
+이동 비용 표면,cost surface,칸마다 지나가는 비용을 담은 지도
+하이킹 함수,hiking function,경사에 따른 보행 속도의 경험식
+수치표고모델,digital elevation model (DEM),격자별 고도를 담은 자료
+앵커,anchor,위치를 아는 점
+다차원척도법,multidimensional scaling (MDS),점 사이 거리를 만족하는 배치를 찾는 방법
+잭나이프,jackknife,자료를 하나씩 빼고 다시 계산하는 방법
+매개중심성,betweenness centrality,최단 경로가 이 점을 지나는 비율
+지명 사전,gazetteer,지명의 이름·시기·좌표를 모은 사전
+정합,alignment,사료의 언급과 사전의 기록을 짝짓는 일
+헝가리 알고리즘,Hungarian algorithm,일대일 짝짓기에서 총점을 최대로 하는 방법
+형태소,morpheme,뜻을 지닌 가장 작은 말의 단위
+나이브 베이즈,naive Bayes,특징들이 서로 독립이라고 가정하는 확률 모형
+로그 풀링,logarithmic pooling,분포들을 곱하여 합치는 방법
+선형 풀링,linear pooling,분포들을 평균하여 합치는 방법
+겹침 계수,overlap coefficient,두 분포의 겹치는 정도
+충돌량,conflict mass,증거 이론의 결합에서 모순되는 질량의 합
+눈 가린 검증,blind validation,좌표를 가리고 추정한 뒤 열어 비교하는 검증
+사전 등록,pre-registration,결과를 보기 전에 분석 절차를 기록하는 일
+가설 장부,hypothesis ledger,학설과 가설을 근거 등급과 함께 적은 목록

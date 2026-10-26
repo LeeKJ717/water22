@@ -1,0 +1,6 @@
+Berman, M. L., Mostern, R., & Southall, H. (Eds.). (2016). Placing names: Enriching and integrating gazetteers. Indiana University Press.
+Fellegi, I. P., & Sunter, A. B. (1969). A theory for record linkage. Journal of the American Statistical Association, 64(328), 1183–1210.
+Goodchild, M. F., & Hill, L. L. (2008). Introduction to digital gazetteer research. International Journal of Geographical Information Science, 22(10), 1039–1044.
+Hill, L. L. (2006). Georeferencing: The geographic associations of information. MIT Press.
+Kuhn, H. W. (1955). The Hungarian method for the assignment problem. Naval Research Logistics Quarterly, 2(1–2), 83–97.
+Mostern, R., & Johnson, I. (2008). From named place to naming event: Creating gazetteers for history. International Journal of Geographical Information Science, 22(10), 1091–1108.

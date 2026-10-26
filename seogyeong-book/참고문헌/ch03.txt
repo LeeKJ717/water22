@@ -1,0 +1,26 @@
+# 이 장은 본 책의 실험 결과(5, 7장)를 인용한다. 외부 문헌 인용은 DB 적재 후 추가한다.
+# 2026-10-24 추가분은 위키백과 쪽과 각 쪽이 가리키는 문헌을 직접 열어 확인한 것이다. Bloch(1949)와 Langlois & Seignobos(1898)의 출판사는 확인하지 못했다(원문 대조 필요). 랑케 쪽은 위키백과가 아니며 출처 기관을 확인하지 못했다.
+Bloch, M. (1949). *Apologie pour l'histoire ou métier d'historien*.
+Encyclopaedia Britannica. (n.d.). Marc Bloch. https://www.britannica.com/biography/Marc-Bloch
+Langlois, C.-V., & Seignobos, C. (1898). *Introduction aux études historiques*.
+Leopold von Ranke. (n.d.). *Biographies*. https://wehd.com/bios/Leopold_von_Ranke.html
+Moore, R. E. (1962). *Interval arithmetic and automatic error analysis in digital computing* [Doctoral dissertation, Stanford University].
+Moore, R. E. (1966). *Interval analysis*. Prentice-Hall.
+Moore's early papers. (n.d.). https://interval.louisiana.edu/Moores_early_papers
+Musée protestant. (n.d.). Charles Seignobos. https://museeprotestant.org/en/notice/charles-seignobos-1854-1942-2/
+Reliable Computing. (n.d.). Early papers on interval computations. https://reliable-computing.org/early.html
+Sunaga, T. (1958). Theory of interval algebra and its application to numerical analysis. *RAAG Memoirs, 2*, 29–46. (2009년 *Japan Journal of Industrial and Applied Mathematics, 26*(2–3), 126–143에 다시 실림)
+Warmus, M. (1956). Calculus of approximations. *Bulletin de l'Académie Polonaise des Sciences, 4*(5), 253–257.
+Wikipedia contributors. (n.d.-a). Charles-Victor Langlois. In *Wikipedia*. https://en.wikipedia.org/wiki/Charles-Victor_Langlois
+Wikipedia contributors. (n.d.-b). Earthly Branches. In *Wikipedia*. https://en.wikipedia.org/wiki/Earthly_Branches
+Wikipedia contributors. (n.d.-c). The historian's craft. In *Wikipedia*. https://en.wikipedia.org/wiki/The_Historian%27s_Craft
+Wikipedia contributors. (n.d.-d). History of the metre. In *Wikipedia*. https://en.wikipedia.org/wiki/History_of_the_metre
+Wikipedia contributors. (n.d.-e). Johann Albrecht Bengel. In *Wikipedia*. https://en.wikipedia.org/wiki/Johann_Albrecht_Bengel
+Wikipedia contributors. (n.d.-f). Karl Lachmann. In *Wikipedia*. https://en.wikipedia.org/wiki/Karl_Lachmann
+Wikipedia contributors. (n.d.-g). Korean units of measurement. In *Wikipedia*. https://en.wikipedia.org/wiki/Korean_units_of_measurement
+Wikipedia contributors. (n.d.-h). Lectio difficilior potior. In *Wikipedia*. https://en.wikipedia.org/wiki/Lectio_difficilior_potior
+Wikipedia contributors. (n.d.-i). Li (unit). In *Wikipedia*. https://en.wikipedia.org/wiki/Li_(unit)
+Wikipedia contributors. (n.d.-j). Samguk sagi. In *Wikipedia*. https://en.wikipedia.org/wiki/Samguk_sagi
+Wikipedia contributors. (n.d.-k). Textual criticism. In *Wikipedia*. https://en.wikipedia.org/wiki/Textual_criticism
+Wikipedia contributors. (n.d.-l). Woodblock printing in Korea. In *Wikipedia*. https://en.wikipedia.org/wiki/Woodblock_printing_in_Korea
+Wikipedia contributors. (n.d.-m). Yan Ruoqu. In *Wikipedia*. https://en.wikipedia.org/wiki/Yan_Ruoqu

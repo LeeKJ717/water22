@@ -1,0 +1,17 @@
+# 이 장의 사료는 후보 목록이며, 판본 확정 후 DB에서 참고문헌을 자동 생성한다.
+German History in Documents and Images. (n.d.). *Leopold von Ranke: Excerpts from selected works, 1824-1881* [Ranke 1824 서문 영역 발췌]. https://germanhistorydocs.org/en/from-vormaerz-to-prussian-dominance-1815-1866/leopold-von-ranke-excerpts-from-selected-works-1824-1881
+Encyclopaedia Britannica. (n.d.). *Leopold von Ranke*. https://www.britannica.com/print/article/491217
+New World Encyclopedia. (n.d.-a). *Lorenzo Valla*. https://www.newworldencyclopedia.org/entry/Lorenzo_Valla
+New World Encyclopedia. (n.d.-b). *Samguk Sagi*. https://newworldencyclopedia.org/entry/Samguk_Sagi
+Warring States Project. (n.d.). *Karl Lachmann*. In *Gallery of Philologists*. https://wsproject.org/current/sinologica/gallery/lachmann.html
+Wikipedia contributors. (n.d.-a). Jean Mabillon. In Wikipedia. https://en.wikipedia.org/wiki/Jean_Mabillon
+Wikipedia contributors. (n.d.-b). Donation of Constantine. In Wikipedia. https://en.wikipedia.org/wiki/Donation_of_Constantine
+Wikipedia contributors. (n.d.-c). Gu Yanwu. In Wikipedia. https://en.wikipedia.org/wiki/Gu_Yanwu
+Wikipedia contributors. (n.d.-d). Yan Ruoqu. In Wikipedia. https://en.wikipedia.org/wiki/Yan_Ruoqu
+Wikipedia contributors. (n.d.-e). Goryeosa. In Wikipedia. https://en.wikipedia.org/wiki/Goryeosa
+Wikipedia contributors. (n.d.-f). Sinjŭng Tongguk yŏji sŭngnam. In Wikipedia. https://en.wikipedia.org/wiki/Sinj%C5%ADng_Tongguk_y%C5%8Fji_s%C5%ADngnam
+한국학중앙연구원. (n.d.-a). 한백겸. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0005900
+한국학중앙연구원. (n.d.-b). 동국지리지. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0016301
+한국학중앙연구원. (n.d.-c). 아방강역고. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0034316
+한국학중앙연구원. (n.d.-d). 신찬팔도지리지. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0033423
+한국문학번역원. (n.d.). 정약용. In *한국문학번역원 도서관*. https://library.ltikorea.or.kr/node/446
