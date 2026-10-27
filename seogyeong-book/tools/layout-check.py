@@ -24,6 +24,7 @@ for pn, page in enumerate(doc, 1):
         r = dr["rect"]
         if r.width > W * 0.98 or r.height > H * 0.98: continue
         if r.y1 > H - 18 * MM: continue
+        if dr.get('fill') == (1.0, 1.0, 1.0) and not dr.get('color'): continue   # 보이지 않는 흰 바탕 사각형
         gx0 = min(gx0, r.x0); gx1 = max(gx1, r.x1)
     for im in page.get_image_info():
         gx0 = min(gx0, im["bbox"][0]); gx1 = max(gx1, im["bbox"][2])

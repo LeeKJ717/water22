@@ -65,12 +65,15 @@ WIDEK = 1.2  # 표 p{}열 폭 배율(130→약 156mm)
 
 def fig_macro(m):
     path, label, cap = [x.strip() for x in m.group(1).split("|", 2)]
+    scale = 1.0
+    if "@" in label:  # 라벨@0.93 → 그림 폭 배율(오른쪽 허용선을 넘는 그림용)
+        label, sc = label.split("@", 1); scale = float(sc)
     cap = esc(cap)
     base = os.path.join(ROOT, "그림", path)
     f = f"{base}-{MODE}.pdf"
     assert os.path.exists(f), f"그림 없음: {f}"
     return ("\n```{=latex}\n\\begin{figure}[!htbp]\\centering\n"
-            f"\\makebox[\\linewidth][r]{{\\makebox[\\dimexpr\\linewidth+{WIDEMM}mm\\relax][c]{{\\includegraphics[width=\\dimexpr\\linewidth+{WIDEMM}mm\\relax,height=0.8\\textheight,keepaspectratio]{{{f}}}}}}}\n\\caption{{{cap}}}\\label{{fig:{label}}}\n\\end{{figure}}\n```\n")
+            f"\\makebox[\\linewidth][r]{{\\makebox[\\dimexpr\\linewidth+{WIDEMM}mm\\relax][c]{{\\includegraphics[width={scale}\\dimexpr\\linewidth+{WIDEMM}mm\\relax,height=0.8\\textheight,keepaspectratio]{{{f}}}}}}}\n\\caption{{{cap}}}\\label{{fig:{label}}}\n\\end{{figure}}\n```\n")
 
 
 def _vw(c):
