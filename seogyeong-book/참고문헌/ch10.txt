@@ -1,6 +1,23 @@
 Berman, M. L., Mostern, R., & Southall, H. (Eds.). (2016). Placing names: Enriching and integrating gazetteers. Indiana University Press.
+Binette, O., & Steorts, R. C. (2022). (Almost) all of entity resolution (arXiv:2008.04443v3). arXiv. https://arxiv.org/abs/2008.04443
+The Canadian Encyclopedia. (n.d.). Howard Borden Newcombe. https://thecanadianencyclopedia.ca/en/article/howard-borden-newcombe
 Fellegi, I. P., & Sunter, A. B. (1969). A theory for record linkage. Journal of the American Statistical Association, 64(328), 1183–1210.
 Goodchild, M. F., & Hill, L. L. (2008). Introduction to digital gazetteer research. International Journal of Geographical Information Science, 22(10), 1039–1044.
 Hill, L. L. (2006). Georeferencing: The geographic associations of information. MIT Press.
+INFORMS. (n.d.). Harold W. Kuhn. https://www.informs.org/Explore/History-of-O.R.-Excellence/Biographical-Profiles/Kuhn-Harold-W.
 Kuhn, H. W. (1955). The Hungarian method for the assignment problem. Naval Research Logistics Quarterly, 2(1–2), 83–97.
+Mostern, R. (n.d.). Curriculum vitae [PDF]. University of Pittsburgh. https://www.worldhistory.pitt.edu/sites/default/files/mosternCVcomplete.pdf
 Mostern, R., & Johnson, I. (2008). From named place to naming event: Creating gazetteers for history. International Journal of Geographical Information Science, 22(10), 1091–1108.
+Tobler, W. R. (1970). A computer movie simulating urban growth in the Detroit region. Economic Geography, 46(Suppl.), 234–240.
+University of California, Santa Barbara. (n.d.). Waldo R. Tobler, Geography Professor Emeritus, passes away. Department of Geography. https://legacy.geog.ucsb.edu/?p=17414
+Wikipedia contributors. (n.d.-a). The Historical Atlas of China. In Wikipedia. https://en.wikipedia.org/wiki/The_Historical_Atlas_of_China
+Wikipedia contributors. (n.d.-b). Hungarian algorithm. In Wikipedia. https://en.wikipedia.org/wiki/Hungarian_algorithm
+Wikipedia contributors. (n.d.-c). Ivan Fellegi. In Wikipedia. https://en.wikipedia.org/wiki/Ivan_Fellegi
+Wikipedia contributors. (n.d.-d). Levenshtein distance. In Wikipedia. https://en.wikipedia.org/wiki/Levenshtein_distance
+Wikipedia contributors. (n.d.-e). Michael Frank Goodchild. In Wikipedia. https://en.wikipedia.org/wiki/Michael_Frank_Goodchild
+Wikipedia contributors. (n.d.-f). Tan Qixiang. In Wikipedia. https://en.wikipedia.org/wiki/Tan_Qixiang
+Wikipedia contributors. (n.d.-g). Tobler's first law of geography. In Wikipedia. https://en.wikipedia.org/wiki/Tobler%27s_first_law_of_geography
+Wikipedia contributors. (n.d.-h). Western Capital. In Wikipedia. https://en.wikipedia.org/wiki/Western_Capital
+World History Center, University of Pittsburgh. (n.d.). World Historical Gazetteer. https://www.worldhistory.pitt.edu/node/581
+한국학중앙연구원. (n.d.-a). 서경. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0027575
+한국학중앙연구원. (n.d.-b). 신증동국여지승람. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0033401

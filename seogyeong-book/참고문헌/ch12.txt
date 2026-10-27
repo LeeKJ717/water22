@@ -5,4 +5,17 @@ Hellinger, E. (1909). Neue Begründung der Theorie quadratischer Formen von unen
 Hinton, G. E. (2002). Training products of experts by minimizing contrastive divergence. Neural Computation, 14(8), 1771–1800.
 Kullback, S., & Leibler, R. A. (1951). On information and sufficiency. The Annals of Mathematical Statistics, 22(1), 79–86.
 Shafer, G. (1976). A mathematical theory of evidence. Princeton University Press.
+Wallis, K. F. (2014). Revisiting Francis Galton's forecasting competition. Statistical Science, 29(3), 420–424. https://doi.org/10.1214/14-STS468
+Wikipedia contributors. (n.d.-a). Donald T. Campbell. In Wikipedia. https://en.wikipedia.org/wiki/Donald_T._Campbell
+Wikipedia contributors. (n.d.-b). Donald W. Fiske. In Wikipedia. https://en.wikipedia.org/wiki/Donald_W._Fiske
+Wikipedia contributors. (n.d.-c). Arthur P. Dempster. In Wikipedia. https://en.wikipedia.org/wiki/Arthur_P._Dempster
+Wikipedia contributors. (n.d.-d). Glenn Shafer. In Wikipedia. https://en.wikipedia.org/wiki/Glenn_Shafer
+Wikipedia contributors. (n.d.-e). Lotfi A. Zadeh. In Wikipedia. https://en.wikipedia.org/wiki/Lotfi_A._Zadeh
+Wikipedia contributors. (n.d.-f). Geoffrey Hinton. In Wikipedia. https://en.wikipedia.org/wiki/Geoffrey_Hinton
+Wikipedia contributors. (n.d.-g). Wang Guowei. In Wikipedia. https://en.wikipedia.org/wiki/Wang_Guowei
+Wikipedia contributors. (n.d.-h). Condorcet's jury theorem. In Wikipedia. https://en.wikipedia.org/wiki/Condorcet%27s_jury_theorem
+Wikipedia contributors. (n.d.-i). Marquis de Condorcet. In Wikipedia. https://en.wikipedia.org/wiki/Marquis_de_Condorcet
+Wikipedia contributors. (n.d.-j). Francis Galton. In Wikipedia. https://en.wikipedia.org/wiki/Francis_Galton
+Wikipedia contributors. (n.d.-k). Kullback–Leibler divergence. In Wikipedia. https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence
+Wikipedia contributors. (n.d.-l). Hellinger distance. In Wikipedia. https://en.wikipedia.org/wiki/Hellinger_distance
 Zadeh, L. A. (1986). A simple view of the Dempster-Shafer theory of evidence and its implication for the rule of combination. AI Magazine, 7(2), 85–90.

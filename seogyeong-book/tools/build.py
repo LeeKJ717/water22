@@ -20,7 +20,8 @@ CHAPTERS = [
     ("p0-intro", None),
     ("01-sources", "사료와 문제 설정"), ("02-prior", None), ("03-critique", None), ("04-db", None),
     ("05-csp", "여덟 가지 기법 가운데 네 가지"), ("06-georef", None), ("07-bayes", None), ("08-lcp", None), ("08z-closing", None),
-    ("09-graph", None), ("10-gazetteer", None), ("11-toponym", None), ("12-cross", None),
+    ("09a-preface", None), ("09i-intro", None),
+    ("09-graph", "여덟 가지 기법 가운데 나머지 네 가지"), ("10-gazetteer", None), ("11-toponym", None), ("12-cross", None), ("12z-closing", None),
     ("13-compare", "서경 통합 추정"), ("14-conflict", None), ("15-conclusion", None),
     ("16-nwkorea", "지역 확장"), ("17-liao", None), ("18-shandong", None), ("19-manchuria", None),
     ("p9-closing", None),
@@ -309,6 +310,7 @@ def auto_index(tex):
 VOL = os.environ.get("VOLUME", "")
 VOLS = {
     "1": (["p0-intro", "01-sources", "02-prior", "03-critique", "04-db", "p9-closing", "C-dbspec"], "1권 준비편", "p0-preface", ["ch01", "ch02", "ch03", "ch04"]),
+    "3": (["09i-intro", "09-graph", "10-gazetteer", "11-toponym", "12-cross", "12z-closing"], "3권 실행편", "09a-preface", ["ch09", "ch10", "ch11", "ch12"]),
     "2": (["00-intro", "05-csp", "06-georef", "07-bayes", "08-lcp", "08z-closing", "A-math", "B-glossary"], "2권 방법편", "00a-preface", ["ch00", "ch05", "ch06", "ch07", "ch08"]),
 }
 
@@ -366,6 +368,12 @@ OPEN = {
     "07-bayes": ("ch07/fig07-1-bayes", "사전분포, 우도, 사후분포(가상 세계)"),
     "08-lcp": ("ch08/fig08-1-isochrone", "등시간선과 최소비용 경로(가상 세계)"),
     "08z-closing": ("ch00/fig0-map", "이 책의 지도와 다음 권으로 가는 길"),
+    "09i-intro": ("ch00/fig0-map", "이 책의 지도"),
+    "09-graph": ("ch09/fig09-2-graph", "지명 사이의 연결을 그물로 나타낸 모양(가상 세계)"),
+    "10-gazetteer": ("ch10/fig10-1-gazetteer", "지명 사전의 구성(가상 세계)"),
+    "11-toponym": ("ch11/fig11-1-morph", "지명 글자의 구성(개략도)"),
+    "12-cross": ("ch12/fig12-1-eight", "일곱 기법과 합친 결과의 사후분포(가상 세계)"),
+    "12z-closing": ("ch00/fig0-map", "이 책의 지도와 다음 권으로 가는 길"),
     "A-math": None, "B-glossary": None,
     "C-dbspec": ("ch04/fig4-db", "증거 DB의 표 구성(개략도)"),
 }
@@ -395,12 +403,14 @@ def add_opener(name, tex):
 def build():
     body = []
     for name, part in CHAPTERS:
-        if name in ("00a-preface", "p0-preface"):
+        if name in ("00a-preface", "p0-preface", "09a-preface"):
             continue
         if VOL in VOLS and name not in VOLS[VOL][0]:
             continue
         if part:
             body.append("\\part{" + part + "}\n")
+        if VOL == "3" and name == "09-graph":
+            body.append("\\setcounter{chapter}{8}\n")
         if VOL == "2" and name == "05-csp":
             body.append("\\setcounter{chapter}{4}\n")
         body.append(add_opener(name, pandoc_tex(preprocess(name))))
