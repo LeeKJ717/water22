@@ -185,7 +185,11 @@ for v, s in [("v1", "초판: 8기법 장과 통합 장의 틀"), ("v2", "수식 
              ("v21", "표지 글자 크기·그림 위치 조정, 출판사 로고 삽입"),
              ("v22", "표지 그림 좌우반전(B안 확정), 뒤표지 띠 재자름"),
              ("v23", "날개 포함 펼침 표지(잠정 규격), 앞표지 1400px PNG, 518쪽 단일 파일"),
-             ("v24", "스킬 v4(18절 신설), DB 일괄 저장(작업내역·스킬·표지 소스), 2쪽 보고서, 3중 백업")]:
+             ("v24", "스킬 v4(18절 신설), DB 일괄 저장(작업내역·스킬·표지 소스), 2쪽 보고서, 3중 백업"),
+             ("prep-v3", "1권 준비편 143쪽, 그림 폭 배율 옵션, 레이아웃 점검 보완"),
+             ("method-v2", "2권 방법편 474쪽, 표 7-6·8장 표 수정"),
+             ("exec-v1", "3권 실행편 417쪽(9~12장 각 약 180KB, 새 그림 26개), 서문·서장·맺음말, VOLS[3], 표지 e1"),
+             ("integ-v1", "4권 통합·적용편(13~19장 확장) — 작업 중")]:
     db.execute("INSERT INTO book_revision(version,rev_date,summary) VALUES(?,?,?)", (v, now if v == VERSION else None, s))
 AD = os.environ.get("ASSET_DIR")
 if AD:
@@ -200,17 +204,19 @@ if AD:
 # ---- 조판 관련 전체 파일(도구, 템플릿, 지침, 자료, 인수인계, 빌드 tex/log)을 BLOB으로 저장
 db.execute("""CREATE TABLE IF NOT EXISTS book_typeset_file(
   file_id INTEGER PRIMARY KEY, version TEXT, path TEXT, kind TEXT, bytes INTEGER, sha256 TEXT, content BLOB)""")
-_skip = ("__pycache__", ".sqlite", ".png", ".pdf", ".tgz", ".zip", ".aux", ".log")
-_roots = ["tools", "data", "인수인계", "표", "그림/data", "스킬", "원고", "참고문헌", "표지", "2권계획"]
+_skip = ("__pycache__", ".ppm", ".sqlite", ".png", ".pdf", ".tgz", ".zip", ".aux", ".log")
+_roots = ["tools", "data", "인수인계", "표", "그림", "buildlog", "스킬", "원고", "참고문헌", "표지", "2권계획"]
 _files = []
 for r in _roots:
     for dp, _, fns in os.walk(os.path.join(ROOT, r)):
         if "__pycache__" in dp: continue
         for fn in sorted(fns):
-            if fn.endswith(_skip) and not fn.endswith(("handoff-v12.pdf", "handoff-v13.pdf", "cover-front-vol1-v6b-1400px.png", "cover-v6b-front.png", "cover-v6b-strip.png", "logo-dark.pdf", "logo-light.pdf")): continue
+            if dp.startswith(os.path.join(ROOT, "그림")) and fn.endswith(".pdf"): pass
+            elif dp.startswith(os.path.join(ROOT, "buildlog")): pass
+            elif fn.endswith(_skip) and not fn.endswith(("handoff-v12.pdf", "handoff-v13.pdf", "cover-front-vol1-v6b-1400px.png", "cover-v6b-front.png", "cover-v6b-strip.png", "logo-dark.pdf", "logo-light.pdf")): continue
             if "cand" in dp.split(os.sep): continue
             _files.append(os.path.join(dp, fn))
-for fn in ("book-color.tex", "book-bw.tex", "book-color.log", "book-bw.log"):
+for fn in ():
     fp = os.path.join(ROOT, "build", fn)
     if os.path.exists(fp): _files.append(fp)
 for fp in _files:
@@ -218,6 +224,14 @@ for fp in _files:
     kind = rel.split(os.sep)[0] if os.sep in rel else "root"
     db.execute("INSERT INTO book_typeset_file(version,path,kind,bytes,sha256,content) VALUES(?,?,?,?,?,?)",
                (VERSION, rel, kind, len(b), sha(b), b))
+db.execute("""CREATE TABLE IF NOT EXISTS book_build(build_id INTEGER PRIMARY KEY, version TEXT, volume TEXT, mode TEXT, pages INTEGER,
+  pdf_sha256 TEXT, pdf_bytes INTEGER, overfull INTEGER, note TEXT)""")
+_bj = os.path.join(ROOT, "buildlog", "builds.json")
+if os.path.exists(_bj):
+    for b in json.load(open(_bj, encoding="utf-8")):
+        db.execute("INSERT INTO book_build(version,volume,mode,pages,pdf_sha256,pdf_bytes,overfull,note) VALUES(?,?,?,?,?,?,?,?)",
+                   (b.get("version"), b.get("volume"), b.get("mode"), b.get("pages"), b.get("pdf_sha256"), b.get("pdf_bytes"), b.get("overfull"), b.get("note", "")))
+print("book_build", db.execute("SELECT count(*) FROM book_build").fetchone()[0])
 print("book_typeset_file", db.execute("SELECT count(*), sum(bytes) FROM book_typeset_file").fetchone())
 db.execute("INSERT OR REPLACE INTO book_meta VALUES(?,?)", ("typeset_note", "조판 도구·템플릿·지침·자료·원고·빌드 tex/log가 book_typeset_file에 BLOB으로 저장됨. 복원: 각 path로 content를 쓴다."))
 db.commit()

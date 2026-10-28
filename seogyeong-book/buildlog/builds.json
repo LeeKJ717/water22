@@ -1,0 +1,62 @@
+[
+ {
+  "version": "prep-v3",
+  "volume": "1",
+  "mode": "bw",
+  "pages": 141,
+  "pdf_sha256": "89b65382e634a5c2e09e241dda720e3c0747d71ef284fba38a590052a6ef6fda",
+  "pdf_bytes": 1347618,
+  "overfull": 0,
+  "note": ""
+ },
+ {
+  "version": "method-v2",
+  "volume": "2",
+  "mode": "bw",
+  "pages": 472,
+  "pdf_sha256": "f1e5670df2f4c449290d480ed98a3f7c8b13795b3343c5fa190f9f2561c9d865",
+  "pdf_bytes": 2326661,
+  "overfull": 24,
+  "note": ""
+ },
+ {
+  "version": "exec-v1",
+  "volume": "3",
+  "mode": "bw",
+  "pages": 417,
+  "pdf_sha256": "b93baa86159cdd6d32ad0f99b2eedf361af793d581780d4f04f2419c9cc51e66",
+  "pdf_bytes": 2654167,
+  "overfull": 124,
+  "note": ""
+ },
+ {
+  "version": "prep-v3",
+  "volume": "1",
+  "mode": "color",
+  "pages": 141,
+  "pdf_sha256": "4f204efeebf7fb23659dc17a2d8e75b60b265b11933a793845cc5033efc1d7bd",
+  "pdf_bytes": 1321252,
+  "overfull": 0,
+  "note": ""
+ },
+ {
+  "version": "method-v2",
+  "volume": "2",
+  "mode": "color",
+  "pages": 472,
+  "pdf_sha256": "001de1749fe9dc427bc89a322524029ec05858571b8bc0450b0da780e557e7e9",
+  "pdf_bytes": 2331169,
+  "overfull": 24,
+  "note": ""
+ },
+ {
+  "version": "exec-v1",
+  "volume": "3",
+  "mode": "color",
+  "pages": 417,
+  "pdf_sha256": "4676cb95c7fdfe093b849357cdfb22174b73d64305c07f5694595015b7b95830",
+  "pdf_bytes": 2662354,
+  "overfull": 124,
+  "note": ""
+ }
+]
