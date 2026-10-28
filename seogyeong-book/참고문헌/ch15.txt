@@ -1,1 +1,20 @@
-# 이 장은 절차 장이며 외부 문헌 인용이 없다.
+Chamberlin, T. C. (1995). The method of multiple working hypotheses. The Journal of Geology, 103(3), 349–354. (Original work published 1897)
+Dawid, A. P. (1982). The well-calibrated Bayesian. Journal of the American Statistical Association, 77(379), 605–610.
+Encyclopedia of Mathematics. (n.d.). Neyman method of confidence intervals. https://encyclopediaofmath.org/wiki/Neyman_method_of_confidence_intervals
+Hoekstra, R., Morey, R. D., Rouder, J. N., & Wagenmakers, E.-J. (2014). Robust misinterpretation of confidence intervals. Psychonomic Bulletin & Review, 21(5), 1157–1164. https://doi.org/10.3758/s13423-013-0572-3
+Jeffreys, H. (1939). Theory of probability. Clarendon Press.
+Kass, R. E., & Raftery, A. E. (1995). Bayes factors. Journal of the American Statistical Association, 90(430), 773–795.
+Mastrandrea, M. D., Field, C. B., Stocker, T. F., Edenhofer, O., Ebi, K. L., Frame, D. J., Held, H., Kriegler, E., Mach, K. J., Matschoss, P. R., Plattner, G.-K., Yohe, G. W., & Zwiers, F. W. (2010). Guidance note for lead authors of the IPCC Fifth Assessment Report on consistent treatment of uncertainties. Intergovernmental Panel on Climate Change. https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf
+Neyman, J. (1937). Outline of a theory of statistical estimation based on the classical theory of probability. Philosophical Transactions of the Royal Society of London, Series A, 236(767), 333–380.
+Railsback, L. B. (n.d.). Multiple working hypotheses. Department of Geology, University of Georgia. https://railsback.org/railsback_chamberlin.html
+Wikipedia contributors. (n.d.-a). Bayes factor. In Wikipedia. https://en.wikipedia.org/wiki/Bayes_factor
+Wikipedia contributors. (n.d.-b). Credible interval. In Wikipedia. https://en.wikipedia.org/wiki/Credible_interval
+Wikipedia contributors. (n.d.-c). Harold Jeffreys. In Wikipedia. https://en.wikipedia.org/wiki/Harold_Jeffreys
+Wikipedia contributors. (n.d.-d). Jeong Yak-yong. In Wikipedia. https://en.wikipedia.org/wiki/Jeong_Yak-yong
+Wikipedia contributors. (n.d.-e). Jerzy Neyman. In Wikipedia. https://en.wikipedia.org/wiki/Jerzy_Neyman
+Wikipedia contributors. (n.d.-f). Pierre-Simon Laplace. In Wikipedia. https://en.wikipedia.org/wiki/Pierre-Simon_Laplace
+Wikipedia contributors. (n.d.-g). Thomas Bayes. In Wikipedia. https://en.wikipedia.org/wiki/Thomas_Bayes
+Wilson, E. B. (1927). Probable inference, the law of succession, and statistical inference. Journal of the American Statistical Association, 22(158), 209–212.
+한국학중앙연구원. (n.d.-a). 구암유고. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0005900
+한국학중앙연구원. (n.d.-b). 동국지리지. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0016301
+한국학중앙연구원. (n.d.-c). 아방강역고. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0034316

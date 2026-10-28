@@ -1,1 +1,35 @@
-# 이 장은 검정 설계이며 외부 문헌 인용은 DB 적재 후 추가한다.
+# 이 장은 검정 설계이며 서경의 위치에 대한 외부 문헌 인용은 DB 적재 후 추가한다. 아래는 이 장의 지리, 인물, 개념 설명에서 직접 읽은 자료이다.
+# 「Penglai(-n)」의 좌표와 옛 이름 등주는 영문 위키백과 원본이 아닌 거울 사이트(wiki.riteme.site)에서 읽었다. 원문 대조 필요.
+# 「일본어 개인 누리집」은 실례표 RE19의 한문 전사본이며 제목을 확인하지 못했다. 위키문헌과 대조하지 못했다. 원문 대조 필요.
+# Vermeersch는 연도가 본문에 없어 연도 미상으로 적었다. Reading Religion의 서평 날짜는 2020년 6월 29일이다.
+A Chinese traveler in medieval Korea. (2020, June 29). In Reading Religion. https://readingreligion.org/9780824856441/a-chinese-traveler-in-medieval-korea
+Chinese Notes. (n.d.). New Book of Tang, fascicle 43b [Glossary and analysis]. https://chinesenotes.com/analysis/xintangshu/xintangshu043b_analysis.html
+Jang Bogo. (n.d.). In World History Encyclopedia. https://worldhistory.org/Jang_Bogo
+Vermeersch, S. (n.d.). Recent advances in the study of the Gaoli tujing (Illustrated account of Goryeo). The Review of Korean Studies, 22(1), 342–354. https://www.accesson.kr/rks/v.22/1/342/7878
+Wikipedia contributors. (n.d.-a). Avulsion (river). In Wikipedia. https://en.wikipedia.org/wiki/Avulsion_(river)
+Wikipedia contributors. (n.d.-b). Bohai Sea. In Wikipedia. https://en.wikipedia.org/wiki/Bohai_Sea
+Wikipedia contributors. (n.d.-c). Changes in the course of the Yellow River. In Wikipedia. https://en.wikipedia.org/wiki/Changes_in_the_course_of_the_Yellow_River
+Wikipedia contributors. (n.d.-d). Cheonghaejin. In Wikipedia. https://en.wikipedia.org/wiki/Cheonghaejin
+Wikipedia contributors. (n.d.-e). Dead reckoning. In Wikipedia. https://en.wikipedia.org/wiki/Dead_reckoning
+Wikipedia contributors. (n.d.-f). East Asian monsoon. In Wikipedia. https://en.wikipedia.org/wiki/East_Asian_monsoon
+Wikipedia contributors. (n.d.-g). Ennin. In Wikipedia. https://en.wikipedia.org/wiki/Ennin
+Wikipedia contributors. (n.d.-h). Gu Jiegang. In Wikipedia. https://en.wikipedia.org/wiki/Gu_Jiegang
+Wikipedia contributors. (n.d.-i). Jia Dan. In Wikipedia. https://en.wikipedia.org/wiki/Jia_Dan
+Wikipedia contributors. (n.d.-j). Jinping Commandery. In Wikipedia. https://en.wikipedia.org/wiki/Jinping_Commandery
+Wikipedia contributors. (n.d.-k). Kim Pusik. In Wikipedia. https://en.wikipedia.org/wiki/Kim_Pusik
+Wikipedia contributors. (n.d.-l). Lüshunkou, Dalian. In Wikipedia. https://en.wikipedia.org/wiki/L%C3%BCshunkou,_Dalian
+Wikipedia contributors. (n.d.-m). Mount Tai. In Wikipedia. https://en.wikipedia.org/wiki/Mount_Tai
+Wikipedia contributors. (n.d.-n). Penglai. In Wikipedia. https://wiki.riteme.site/wiki/Miaodao_(archipelago)
+Wikipedia contributors. (n.d.-o). Shandong. In Wikipedia. https://en.wikipedia.org/wiki/Shandong
+Wikipedia contributors. (n.d.-p). Tan Qixiang. In Wikipedia. https://en.wikipedia.org/wiki/Tan_Qixiang
+Wikipedia contributors. (n.d.-q). Yellow River Delta National Nature Reserve. In Wikipedia. https://en.wikipedia.org/wiki/Yellow_River_Delta_National_Nature_Reserve
+Wikisource contributors. (n.d.-a). 三國史記/卷37. In Wikisource. https://zh.wikisource.org/wiki/三國史記/卷37
+Wikisource contributors. (n.d.-b). 北史/卷094. In Wikisource. https://zh.wikisource.org/wiki/北史/卷094
+Wikisource contributors. (n.d.-c). 後漢書/卷85. In Wikisource. https://zh.wikisource.org/wiki/後漢書/卷85
+Wikisource contributors. (n.d.-d). 隋書/卷81. In Wikisource. https://zh.wikisource.org/wiki/隋書/卷81
+Wikisource contributors. (n.d.-e). 조선왕조실록/세종장헌대왕실록/154권. In Wikisource. https://ko.wikisource.org/wiki/조선왕조실록/세종장헌대왕실록/154권
+Yao, Y., & Feng, D. (2023). A historical study on sea routes of the Zhoushan Archipelago in ancient China. Journal of Marine and Island Cultures, 12(1), 80–106. https://doi.org/10.21463/jmic.2023.12.1.06
+김문경. (2019). 義湘의 입당항로와 義天의 여송길. 숭실사학, 42, 119–132.
+동북아역사재단. (연도 미상). 고구려통사 3: 고구려 중기의 정치와 사회 [PDF]. https://www.nahf.or.kr/web/portal/bbs/2457/list
+양정석. (연도 미상). 6장 장안성의 축조와 이거. 고구려통사 5: 고구려 후기 정세 변화와 지배체제 [PDF]. 동북아역사재단. https://www.nahf.or.kr/web/portal/bbs/2457/list
+일본어 개인 누리집. (n.d.). mater2 [한문 전사본, 제목 미확인]. https://www.ne.jp/asahi/isshun/original/mater2.html

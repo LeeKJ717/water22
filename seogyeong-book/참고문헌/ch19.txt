@@ -1,1 +1,34 @@
 # 이 장은 검정 설계이며 외부 문헌 인용은 DB 적재 후 추가한다.
+# 아래 항목은 2026년 10월 28일에 확인한 2차 자료이며 원문 대조 전이다. 정약용 항목(h)은 영문 위키백과의 2023년 10월 판 미러로 확인했다.
+Max Planck Institute for the History of Science. (n.d.). The early evolution of China's climate change science. https://www.mpiwg-berlin.mpg.de/observations/early-evolution-chinas-climate-change-science
+The Online Books Page. (n.d.). Inaba, Iwakichi, 1876-1940. University of Pennsylvania. https://onlinebooks.library.upenn.edu/webbin/who/Inaba%2c%20Iwakichi%2c%201876%2d1940
+Wikipedia contributors. (n.d.-a). Battle of Kuju. In Wikipedia. https://en.wikipedia.org/wiki/Battle_of_Kuju
+Wikipedia contributors. (n.d.-b). Bayes factor. In Wikipedia. https://en.wikipedia.org/wiki/Bayes_factor
+Wikipedia contributors. (n.d.-c). Chu Coching. In Wikipedia. https://en.wikipedia.org/wiki/Chu_Coching
+Wikipedia contributors. (n.d.-d). Datong. In Wikipedia. https://en.wikipedia.org/wiki/Datong
+Wikipedia contributors. (n.d.-e). Dijkstra's algorithm. In Wikipedia. https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+Wikipedia contributors. (n.d.-f). Five Capitals System. In Wikipedia. https://en.wikipedia.org/wiki/Five_Capitals_System
+Wikipedia contributors. (n.d.-g). The Historical Atlas of China. In Wikipedia. https://en.wikipedia.org/wiki/The_Historical_Atlas_of_China
+Wikipedia contributors. (n.d.-h). Jeong Yak-yong. In Wikipedia. https://en.wikipedia.org/wiki/Jeong_Yak-yong
+Wikipedia contributors. (n.d.-i). Korean–Jurchen border conflicts. In Wikipedia. https://en.wikipedia.org/wiki/Korean%E2%80%93Jurchen_border_conflicts
+Wikipedia contributors. (n.d.-j). Korean nationalist historiography. In Wikipedia. https://en.wikipedia.org/wiki/Korean_nationalist_historiography
+Wikipedia contributors. (n.d.-k). Linjiang. In Wikipedia. https://en.wikipedia.org/wiki/Linjiang
+Wikipedia contributors. (n.d.-l). List of provinces of Balhae. In Wikipedia. https://en.wikipedia.org/wiki/List_of_provinces_of_Balhae
+Wikipedia contributors. (n.d.-m). Medieval Warm Period. In Wikipedia. https://en.wikipedia.org/wiki/Medieval_Warm_Period
+Wikipedia contributors. (n.d.-n). Migrated provinces, commanderies and counties. In Wikipedia. https://en.wikipedia.org/wiki/Migrated_provinces,_commanderies_and_counties
+Wikipedia contributors. (n.d.-o). Myoch'ŏng. In Wikipedia. https://en.wikipedia.org/wiki/Myoch%27%C5%8Fng
+Wikipedia contributors. (n.d.-p). Pyongyang. In Wikipedia. https://en.wikipedia.org/wiki/Pyongyang
+Wikipedia contributors. (n.d.-q). Shiratori Kurakichi. In Wikipedia. https://en.wikipedia.org/wiki/Shiratori_Kurakichi
+Wikipedia contributors. (n.d.-r). Sin Ch'aeho. In Wikipedia. https://en.wikipedia.org/wiki/Sin_Ch%27aeho
+Wikipedia contributors. (n.d.-s). Songhua River. In Wikipedia. https://en.wikipedia.org/wiki/Songhua_River
+Wikipedia contributors. (n.d.-t). Tan Qixiang. In Wikipedia. https://en.wikipedia.org/wiki/Tan_Qixiang
+Wikipedia contributors. (n.d.-u). Tobler's hiking function. In Wikipedia. https://en.wikipedia.org/wiki/Tobler%27s_hiking_function
+Wikipedia contributors. (n.d.-v). Western Capital. In Wikipedia. https://en.wikipedia.org/wiki/Western_Capital
+Wikipedia contributors. (n.d.-w). Yalu River. In Wikipedia. https://en.wikipedia.org/wiki/Yalu_River
+Wikipedia contributors. (n.d.-x). Yun Kwan. In Wikipedia. https://en.wikipedia.org/wiki/Yun_Kwan
+丁若鏞. (2001). 我邦疆域考 (丁海廉, 역주). 現代實學社. https://opac.lib.hit-u.ac.jp/opac/opac_link/bibid/0000212734
+한국학중앙연구원. (n.d.-a). 묘청. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0018892
+한국학중앙연구원. (n.d.-b). 서경(고려). In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0027575
+한국학중앙연구원. (n.d.-c). 서경압록부. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0027585
+한국학중앙연구원. (n.d.-d). 한진서. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0061996
+한국학중앙연구원. (n.d.-e). 한치윤. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0062033

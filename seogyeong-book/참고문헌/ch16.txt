@@ -1,5 +1,18 @@
-# 이 장은 검정 설계이며 외부 문헌 인용은 DB 적재 후 추가한다.
-
 동북아역사재단. (연도 미상). 고구려통사 3: 고구려 중기의 정치와 사회 [PDF]. https://www.nahf.or.kr/web/portal/bbs/2457/list
 양정석. (연도 미상). 6장 장안성의 축조와 이거. 고구려통사 5: 고구려 후기 정세 변화와 지배체제 [PDF]. 동북아역사재단. https://www.nahf.or.kr/web/portal/bbs/2457/list
-Wikipedia contributors. (n.d.). Pyongyang. In Wikipedia. https://en.wikipedia.org/wiki/Pyongyang
+Wikipedia contributors. (n.d.-a). Anhak Palace. In Wikipedia. https://en.wikipedia.org/wiki/Anhak_Palace
+Wikipedia contributors. (n.d.-b). Base rate fallacy. In Wikipedia. https://en.wikipedia.org/wiki/Base_rate_fallacy
+Wikipedia contributors. (n.d.-c). Circular reasoning. In Wikipedia. https://en.wikipedia.org/wiki/Circular_reasoning
+Wikipedia contributors. (n.d.-d). Confirmation bias. In Wikipedia. https://en.wikipedia.org/wiki/Confirmation_bias
+Wikipedia contributors. (n.d.-e). Kim Pusik. In Wikipedia. https://en.wikipedia.org/wiki/Kim_Pusik
+Wikipedia contributors. (n.d.-f). Pyongyang. In Wikipedia. https://en.wikipedia.org/wiki/Pyongyang
+Wikipedia contributors. (n.d.-g). Samguk sagi. In Wikipedia. https://en.wikipedia.org/wiki/Samguk_sagi
+Wikipedia contributors. (n.d.-h). Taesong Fortress. In Wikipedia. https://en.wikipedia.org/wiki/Taesong_Fortress
+Wikipedia contributors. (n.d.-i). Taesongsan. In Wikipedia. https://en.wikipedia.org/wiki/Taesongsan
+Wikipedia contributors. (n.d.-j). The Logic of Scientific Discovery. In Wikipedia. https://en.wikipedia.org/wiki/The_Logic_of_Scientific_Discovery
+Wikipedia contributors. (n.d.-k). Yun Tusu. In Wikipedia. https://en.wikipedia.org/wiki/Yun_Tusu
+한국문학번역원. (n.d.). 정약용. In *한국문학번역원 도서관*. https://library.ltikorea.or.kr/node/446
+한국학중앙연구원. (n.d.-a). 묘청. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0018892
+한국학중앙연구원. (n.d.-b). 아방강역고. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0034316
+한국학중앙연구원. (n.d.-c). 한치윤. In *한국민족문화대백과사전*. https://encykorea.aks.ac.kr/Article/E0062033
+コトバンク. (n.d.). 関野貞. https://kotobank.jp/word/%E9%96%A2%E9%87%8E%E8%B2%9E

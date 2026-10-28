@@ -1,1 +1,13 @@
-# 이 장은 절차 장이며 외부 문헌 인용이 없다.
+National Institute of Standards and Technology. (n.d.). *NIST TN 1297: 2. Classification of components of uncertainty*. https://www.nist.gov/physical-measurement-laboratory/nist-tn-1297-2-classif-components-uncertainty
+Wikipedia contributors. (n.d.-a). Benjamin Peirce. In Wikipedia. https://en.wikipedia.org/wiki/Benjamin_Peirce
+Wikipedia contributors. (n.d.-b). Carl Friedrich Gauss. In Wikipedia. https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss
+Wikipedia contributors. (n.d.-c). Chauvenet's criterion. In Wikipedia. https://en.wikipedia.org/wiki/Chauvenet%27s_criterion
+Wikipedia contributors. (n.d.-d). Duhem–Quine thesis. In Wikiwand. https://www.wikiwand.com/en/articles/Duhem–Quine_thesis
+Wikipedia contributors. (n.d.-e). The Historian's Craft. In Wikipedia. https://en.wikipedia.org/wiki/The_Historian%27s_Craft
+Wikipedia contributors. (n.d.-f). John Tukey. In Wikipedia. https://en.wikipedia.org/wiki/John_Tukey
+Wikipedia contributors. (n.d.-g). Leopold von Ranke. In Wikipedia. https://en.wikipedia.org/wiki/Leopold_von_Ranke
+Wikipedia contributors. (n.d.-h). Marc Bloch. In Wikipedia. https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Marc_Bloch
+Wikipedia contributors. (n.d.-i). Peirce's criterion. In Wikipedia. https://en.wikipedia.org/wiki/Peirce%27s_criterion
+Wikipedia contributors. (n.d.-j). Pierre Duhem. In Wikipedia. https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Pierre_Duhem
+Wikipedia contributors. (n.d.-k). Study heterogeneity. In Wikipedia. https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Study_heterogeneity
+Wikipedia contributors. (n.d.-l). William Gemmell Cochran. In Wikipedia. https://en.wikipedia.org/wiki/William_Gemmell_Cochran

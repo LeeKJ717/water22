@@ -22,8 +22,9 @@ CHAPTERS = [
     ("05-csp", "여덟 가지 기법 가운데 네 가지"), ("06-georef", None), ("07-bayes", None), ("08-lcp", None), ("08z-closing", None),
     ("09a-preface", None), ("09i-intro", None),
     ("09-graph", "여덟 가지 기법 가운데 나머지 네 가지"), ("10-gazetteer", None), ("11-toponym", None), ("12-cross", None), ("12z-closing", None),
+    ("13a-preface", None), ("13i-intro", None),
     ("13-compare", "서경 통합 추정"), ("14-conflict", None), ("15-conclusion", None),
-    ("16-nwkorea", "지역 확장"), ("17-liao", None), ("18-shandong", None), ("19-manchuria", None),
+    ("16-nwkorea", "지역 확장"), ("17-liao", None), ("18-shandong", None), ("19-manchuria", None), ("19z-closing", None),
     ("p9-closing", None),
     ("A-math", "부록"), ("B-glossary", None), ("C-dbspec", None),
 ]
@@ -310,6 +311,7 @@ def auto_index(tex):
 VOL = os.environ.get("VOLUME", "")
 VOLS = {
     "1": (["p0-intro", "01-sources", "02-prior", "03-critique", "04-db", "p9-closing", "C-dbspec"], "1권 준비편", "p0-preface", ["ch01", "ch02", "ch03", "ch04"]),
+    "4": (["13i-intro", "13-compare", "14-conflict", "15-conclusion", "16-nwkorea", "17-liao", "18-shandong", "19-manchuria", "19z-closing"], "4권 통합·적용편", "13a-preface", ["ch13", "ch14", "ch15", "ch16", "ch17", "ch18", "ch19"]),
     "3": (["09i-intro", "09-graph", "10-gazetteer", "11-toponym", "12-cross", "12z-closing"], "3권 실행편", "09a-preface", ["ch09", "ch10", "ch11", "ch12"]),
     "2": (["00-intro", "05-csp", "06-georef", "07-bayes", "08-lcp", "08z-closing", "A-math", "B-glossary"], "2권 방법편", "00a-preface", ["ch00", "ch05", "ch06", "ch07", "ch08"]),
 }
@@ -368,6 +370,15 @@ OPEN = {
     "07-bayes": ("ch07/fig07-1-bayes", "사전분포, 우도, 사후분포(가상 세계)"),
     "08-lcp": ("ch08/fig08-1-isochrone", "등시간선과 최소비용 경로(가상 세계)"),
     "08z-closing": ("ch00/fig0-map", "이 책의 지도와 다음 권으로 가는 길"),
+    "13i-intro": ("ch00/fig0-map", "이 책의 지도"),
+    "13-compare": ("ch13/fig13-b-flow", "비교의 흐름(가상 세계)"),
+    "14-conflict": ("ch14/fig14-b-flow", "충돌 진단의 흐름"),
+    "15-conclusion": ("ch15/fig15-b-blanks", "결론 문장의 빈칸"),
+    "16-nwkorea": ("ch16/fig16-b-scale", "한반도 서북부의 눈금"),
+    "17-liao": ("ch17/fig17-b-crossing", "요하 유역의 건넘 지점"),
+    "18-shandong": ("ch18/fig18-b-course", "산동 지역의 항로"),
+    "19-manchuria": ("ch19/fig19-c-xijing", "만주의 서경 후보"),
+    "19z-closing": ("ch00/fig0-map", "이 책의 지도"),
     "09i-intro": ("ch00/fig0-map", "이 책의 지도"),
     "09-graph": ("ch09/fig09-2-graph", "지명 사이의 연결을 그물로 나타낸 모양(가상 세계)"),
     "10-gazetteer": ("ch10/fig10-1-gazetteer", "지명 사전의 구성(가상 세계)"),
@@ -403,12 +414,14 @@ def add_opener(name, tex):
 def build():
     body = []
     for name, part in CHAPTERS:
-        if name in ("00a-preface", "p0-preface", "09a-preface"):
+        if name in ("00a-preface", "p0-preface", "09a-preface", "13a-preface"):
             continue
         if VOL in VOLS and name not in VOLS[VOL][0]:
             continue
         if part:
             body.append("\\part{" + part + "}\n")
+        if VOL == "4" and name == "13-compare":
+            body.append("\\setcounter{chapter}{12}\n")
         if VOL == "3" and name == "09-graph":
             body.append("\\setcounter{chapter}{8}\n")
         if VOL == "2" and name == "05-csp":

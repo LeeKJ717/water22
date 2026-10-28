@@ -58,5 +58,25 @@
   "pdf_bytes": 2662354,
   "overfull": 124,
   "note": ""
+ },
+ {
+  "version": "integ-v1",
+  "volume": "4",
+  "mode": "bw",
+  "pages": 689,
+  "pdf_sha256": "8e99609649c24d1fe1a807651b6f26e7e3996e8de75c7db0a5c8024c0986f95c",
+  "pdf_bytes": 4183234,
+  "overfull": 380,
+  "note": ""
+ },
+ {
+  "version": "integ-v1",
+  "volume": "4",
+  "mode": "color",
+  "pages": 689,
+  "pdf_sha256": "12f76d9c70abc71f43b838aa1f008317eeee8a7bb6b1354b9355c5aa8d2bfb5f",
+  "pdf_bytes": 4116507,
+  "overfull": 380,
+  "note": ""
  }
 ]

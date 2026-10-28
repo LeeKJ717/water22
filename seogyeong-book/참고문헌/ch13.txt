@@ -1,1 +1,33 @@
-# 이 장은 절차 장이며 외부 문헌 인용이 없다.
+# 이 장의 인물과 이론은 아래 문헌과 위키백과 항목에서 확인했다. 확인 경로와 한계는 맨 아래 주석에 적었다.
+Brier, G. W. (1950). Verification of forecasts expressed in terms of probability. Monthly Weather Review, 78(1), 1–3.
+Chalmers, I. (2011). Why the 1948 MRC trial of streptomycin used treatment allocation based on random numbers. Journal of the Royal Society of Medicine, 104, 383–386.
+Chamberlin, T. C. (1890). The method of multiple working hypotheses. Science, 15(366), 92–96.
+Herr, H. W. (2005). Franklin, Lavoisier, and Mesmer: Origin of the controlled clinical trial. Urologic Oncology, 23(5), 346–351. https://doi.org/10.1016/j.urolonc.2005.02.003
+MacTutor History of Mathematics Archive. (n.d.). Edwin Bidwell Wilson. https://mathshistory.st-andrews.ac.uk/Biographies/Wilson_Edwin.html
+Makridakis, S., Andersen, A., Carbone, R., Fildes, R., Hibon, M., Lewandowski, R., Newton, J., Parzen, E., & Winkler, R. (1982). The accuracy of extrapolation (time series) methods: Results of a forecasting competition. Journal of Forecasting, 1(2), 111–153. https://doi.org/10.1002/for.3980010202
+Makridakis, S., & Hibon, M. (2000). The M3-Competition: Results, conclusions and implications. International Journal of Forecasting, 16(4), 451–476. https://doi.org/10.1016/S0169-2070(00)00057-1
+Medical Research Council. (1948). Streptomycin treatment of pulmonary tuberculosis: A Medical Research Council investigation. British Medical Journal, 2, 769–782.
+Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. OSF Preprints. https://doi.org/10.31219/osf.io/2dxu5
+Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. Science, 349(6251), aac4716. https://doi.org/10.1126/science.aac4716
+Rosenthal, R., & Fode, K. L. (1963). The effect of experimenter bias on the performance of the albino rat. Behavioral Science, 8(3), 183–189. https://doi.org/10.1002/bs.3830080302
+Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. Psychological Science, 22(11), 1359–1366. https://doi.org/10.1177/0956797611417632
+Wikipedia contributors. (n.d.-a). Austin Bradford Hill. In Wikipedia. https://en.wikipedia.org/wiki/Austin_Bradford_Hill
+Wikipedia contributors. (n.d.-b). Blinded experiment. In Wikipedia. https://en.wikipedia.org/wiki/Blinded_experiment
+Wikipedia contributors. (n.d.-c). Brian Nosek. In Wikipedia. https://en.wikipedia.org/wiki/Brian_Nosek
+Wikipedia contributors. (n.d.-d). Brier score. In Wikipedia. https://en.wikipedia.org/wiki/Brier_score
+Wikipedia contributors. (n.d.-e). CASP. In Wikipedia. https://en.wikipedia.org/wiki/CASP
+Wikipedia contributors. (n.d.-f). Glenn W. Brier. In Wikipedia. https://en.wikipedia.org/wiki/Glenn_W._Brier
+Wikipedia contributors. (n.d.-g). John Ioannidis. In Wikipedia. https://en.wikipedia.org/wiki/John_Ioannidis
+Wikipedia contributors. (n.d.-h). Makridakis Competitions. In Wikipedia. https://en.wikipedia.org/wiki/Makridakis_Competitions
+Wikipedia contributors. (n.d.-i). Preregistration (science). In Wikipedia. https://en.wikipedia.org/wiki/Preregistration_(science)
+Wikipedia contributors. (n.d.-j). Reproducibility Project. In Wikipedia. https://en.wikipedia.org/wiki/Reproducibility_Project
+Wikipedia contributors. (n.d.-k). Robert Rosenthal (psychologist). In Wikipedia. https://en.wikipedia.org/wiki/Robert_Rosenthal_(psychologist)
+Wikipedia contributors. (n.d.-l). Ronald Fisher. In Wikipedia. https://en.wikipedia.org/wiki/Ronald_Fisher
+Wikipedia contributors. (n.d.-m). Spyros Makridakis. In Wikipedia. https://en.wikipedia.org/wiki/Spyros_Makridakis
+Wikipedia contributors. (n.d.-n). Thomas Chrowder Chamberlin. In Wikipedia. https://en.wikipedia.org/wiki/Thomas_Chrowder_Chamberlin
+Wilson, E. B. (1927). Probable inference, the law of succession, and statistical inference. Journal of the American Statistical Association, 22(158), 209–212. https://doi.org/10.1080/01621459.1927.10502953
+# 확인 경로. 인물(힐, 브라이어, 로젠탈, 마크리다키스, 이오아니디스, 노섹, 챔벌린, 피셔, 윌슨)의 생몰년과 업적은 위 위키백과 항목과 MacTutor 항목에서 읽었다. 노섹의 출생 연도는 확인하지 못해 본문에 적지 않았다.
+# 확인 경로. 이론 다섯 가지(다중 작업 가설, 눈 가림과 기대 효과, 사전 등록과 연구자 자유도, 공개 비교 대회, 보정과 정직한 점수)는 각각 챔벌린(1890), 로젠탈과 포드(1963), 시먼스 등(2011)과 노섹 등(2018), 마크리다키스 등(1982)과 위키백과 CASP 항목, 브라이어(1950)와 윌슨(1927)의 서지에서 확인했다.
+# 한계. Wikipedia contributors (n.d.-b)는 en.wikipedia.org 대신 사본 사이트로 읽었다. 1865년과 1907년의 눈 가림 연혁은 이 항목의 서술이며 원 논문을 직접 열어 보지 못했다(원문 대조 필요).
+# 한계. 윌슨(1927)에 윌슨 구간이 들어 있다는 점, 챔벌린(1890)의 논증 내용, 로젠탈(1979) 「파일 서랍 문제」의 본문과 『피그말리온 교실』 초판 연도는 원문 대조 필요이다.
+# 한계. 노섹 등(2018)은 OSF 사전 인쇄본의 DOI만 확인했다. 같은 글의 학술지(PNAS) 게재본은 권과 쪽을 확인하지 못했다. 로젠탈과 포드(1963)의 권과 호는 DOI에서 추정했고 쪽수만 직접 확인했다(원문 대조 필요).
