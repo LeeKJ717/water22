@@ -240,7 +240,7 @@ if os.path.isdir(_sg):
     for fn in sorted(os.listdir(_sg)):
         fp = os.path.join(_sg, fn)
         if fn.endswith(".csv"):
-            kind = "geo" if "sagyo-geo" in fn else "neighbors" if "neighbors" in fn else "theories"
+            kind = "geo" if "sagyo-geo" in fn else "neighbors" if "neighbors" in fn else "koryosa58" if "koryosa58" in fn else "theories"
             rows = list(csv.DictReader(rd(fp).splitlines()))
             for i, r in enumerate(rows, 1):
                 url = r.get("출처URL") or r.get("좌표출처URL") or ""

@@ -12,12 +12,11 @@ SITES = {"zh": "https://zh.wikisource.org/w/api.php", "ko": "https://ko.wikisour
 TARGETS = [
  ("고려사 권58 지리3 서경유수관", "zh", ["高麗史/卷五十八", "高麗史/卷058"], "高麗史 地理三 西京留守官 平壤府"),
  ("고려사 권57 지리2", "zh", ["高麗史/卷五十七", "高麗史/卷057"], "高麗史 地理二 楊廣道"),
- ("신증동국여지승람 권51 평양부", "zh", ["新增東國輿地勝覽/卷五十一", "新增東國輿地勝覽/卷51"], "新增東國輿地勝覽 平壤府 建置沿革"),
- ("삼국사기 권19 평원왕", "zh", ["三國史記/卷第十九", "三國史記/卷十九"], "三國史記 平原王 長安城 移都"),
- ("삼국사기 권37 지리4", "zh", ["三國史記/卷第三十七", "三國史記/卷三十七"], "三國史記 地理四 平壤"),
+ ("신증동국여지승람 권51 평양부", "zh", ["新增東國輿地勝覽/卷051", "新增東國輿地勝覽/卷51", "新增東國輿地勝覽/卷五十一"], "新增東國輿地勝覽 平壤府 建置沿革"),
+ ("삼국사기 권19 평원왕", "zh", ["三國史記/卷19"], "三國史記 平原王 長安城 移都"),
+ ("삼국사기 권37 지리4", "zh", ["三國史記/卷37"], "三國史記 地理四 平壤"),
  ("세종실록지리지 평안도 평양부", "zh", ["世宗實錄地理志/平安道", "世宗實錄/地理志/平安道"], "世宗實錄地理志 平安道 平壤府"),
- ("고려사 서경 검색", "ko", [], "서경 평양 유수관"),
- ("고려사절요 서경 검색", "zh", [], "高麗史節要 西京 平壤 重營"),
+  ("고려사절요 서경 검색", "zh", [], "高麗史節要 西京 平壤 重營"),
 ]
 KEYS = ["西京", "平壤", "鴨綠", "浿水", "大同江", "遼東", "里"]
 db = sqlite3.connect(os.path.join(DBD, "sagyocrawl.sqlite"))
@@ -43,7 +42,7 @@ def get_text(site, title):
     return None, url
 def save(target, site, title, url, text):
     b = text.encode("utf-8"); h = hashlib.sha256(b).hexdigest()
-    fn = re.sub(r"[^0-9A-Za-z가-힣]+", "-", f"{site}-{title}")[:80] + ".txt"
+    fn = f"{site}-{h[:12]}.txt"
     open(os.path.join(RAW, fn), "wb").write(b)
     cur = db.execute("INSERT INTO page(target,site,title,url,fetched_at,bytes,sha256,rawfile,text) VALUES(?,?,?,?,?,?,?,?,?)",
                      (target, site, title, url, now(), len(b), h, "raw/" + fn, text)); pid = cur.lastrowid
