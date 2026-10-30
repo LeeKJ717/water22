@@ -232,6 +232,25 @@ if os.path.exists(_bj):
         db.execute("INSERT INTO book_build(version,volume,mode,pages,pdf_sha256,pdf_bytes,overfull,note) VALUES(?,?,?,?,?,?,?,?)",
                    (b.get("version"), b.get("volume"), b.get("mode"), b.get("pages"), b.get("pdf_sha256"), b.get("pdf_bytes"), b.get("overfull"), b.get("note", "")))
 print("book_build", db.execute("SELECT count(*) FROM book_build").fetchone()[0])
+# ---- 서경 실제 사료·이웃 지명·학설 (data/sagyo, 원문 대조 전 자료)
+_sg = os.path.join(ROOT, "data", "sagyo")
+db.execute("CREATE TABLE IF NOT EXISTS sagyo_source(sid INTEGER PRIMARY KEY, kind TEXT, file TEXT, row_no INTEGER, col_json TEXT, url TEXT, verify_status TEXT)")
+db.execute("CREATE TABLE IF NOT EXISTS sagyo_note(nid INTEGER PRIMARY KEY, file TEXT, content TEXT)")
+if os.path.isdir(_sg):
+    for fn in sorted(os.listdir(_sg)):
+        fp = os.path.join(_sg, fn)
+        if fn.endswith(".csv"):
+            kind = "geo" if "sagyo-geo" in fn else "neighbors" if "neighbors" in fn else "theories"
+            rows = list(csv.DictReader(rd(fp).splitlines()))
+            for i, r in enumerate(rows, 1):
+                url = r.get("출처URL") or r.get("좌표출처URL") or ""
+                vs = r.get("확인상태") or r.get("대응확실도") or ""
+                db.execute("INSERT INTO sagyo_source(kind,file,row_no,col_json,url,verify_status) VALUES(?,?,?,?,?,?)",
+                           (kind, fn, i, json.dumps(r, ensure_ascii=False), url, vs))
+        elif fn.endswith(".md"):
+            db.execute("INSERT INTO sagyo_note(file,content) VALUES(?,?)", (fn, rd(fp)))
+    db.execute("INSERT OR REPLACE INTO book_meta VALUES(?,?)", ("sagyo_note", "data/sagyo CSV는 에이전트가 웹 요약 도구로 수집한 1차 자료. 원문 대조 전이며 sagyo_source.verify_status를 확인할 것."))
+print("sagyo_source", db.execute("SELECT kind,count(*) FROM sagyo_source GROUP BY kind").fetchall())
 print("book_typeset_file", db.execute("SELECT count(*), sum(bytes) FROM book_typeset_file").fetchone())
 db.execute("INSERT OR REPLACE INTO book_meta VALUES(?,?)", ("typeset_note", "조판 도구·템플릿·지침·자료·원고·빌드 tex/log가 book_typeset_file에 BLOB으로 저장됨. 복원: 각 path로 content를 쓴다."))
 db.commit()
