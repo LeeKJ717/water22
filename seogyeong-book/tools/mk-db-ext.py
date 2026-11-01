@@ -11,6 +11,7 @@
   source_text                        크롤한 사료 전문(위키문헌 전사본)을 사료 원문표에 적재(verified=0)
   paper_fetch                        참고문헌별 DOI/URL 주소와 논문 전문 수집 상태(todo) - 전문 수집기의 작업 목록
   v_flag_open, v_cite_unmatched, v_volume_toc   자주 쓰는 조회 뷰"""
+import logging; logging.disable(logging.CRITICAL)
 import sys, os, re, ast, glob, sqlite3, hashlib, argparse, datetime, json
 ap = argparse.ArgumentParser()
 ap.add_argument("db"); ap.add_argument("--root"); ap.add_argument("--pdf-dir"); ap.add_argument("--crawl-dir"); ap.add_argument("--no-blob", action="store_true")

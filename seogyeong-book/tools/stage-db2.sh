@@ -14,7 +14,7 @@ echo "[5] DB 만들기"
 (cd $D/src && BOOK_VERSION=$S python3 tools/mk-db.py $D/db/seogyeong.sqlite 2>&1 | tail -5)
 python3 -c "import pypdf" 2>/dev/null || pip install -q --user pypdf 2>&1 | tail -1
 echo "[6] 확장"
-(cd $D/src && python3 tools/mk-db-ext.py $D/db/seogyeong.sqlite --root . --pdf-dir $D/pdf --crawl-dir $D/crawl 2>&1 | grep -v "EOF marker")
+(cd $D/src && python3 tools/mk-db-ext.py $D/db/seogyeong.sqlite --root . --pdf-dir $D/pdf --crawl-dir $D/crawl 2>&1 | tail -30)
 cat > $D/README.md <<EOF2
 # seogyeong_db / $S  (2판·수정 작업용 통합 DB)
 - db/seogyeong.sqlite : 원고(절·블록)·표·그림·참고문헌·논문·수치·조판 파일 BLOB + 확장표(book_volume, book_cite, book_flag, book_pdf, source_text, paper_fetch, crawl_*)
