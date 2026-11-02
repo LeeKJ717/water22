@@ -11,6 +11,9 @@ if sys.argv[1] == "--merge":
         blob = open(os.path.join(OUT, raw), "rb").read() if raw and raw.endswith(".pdf") and os.path.exists(os.path.join(OUT, raw)) else None
         t.execute("UPDATE paper SET fulltext=COALESCE(?,fulltext), pdf_blob=COALESCE(?,pdf_blob), pdf_sha256=COALESCE(?,pdf_sha256) WHERE paper_id=?", (text, blob, sha if blob else None, pid))
         t.execute("UPDATE paper_fetch SET status=?, pdf_sha256=?, fetched_at=?, note=? WHERE paper_id=?", ("done-" + st, sha, at, src + " " + (url or ""), pid)); n += 1
+    for pid, st, src, url, note, text, at in s.execute("SELECT paper_id,status,source,url,note,text,fetched_at FROM fetch WHERE status NOT IN ('pdf','html')").fetchall():
+        if st == "abstract" and text: t.execute("UPDATE paper SET abstract=COALESCE(NULLIF(abstract,''),?) WHERE paper_id=?", (text, pid))
+        t.execute("UPDATE paper_fetch SET status=?, fetched_at=?, note=? WHERE paper_id=?", (st, at, (note or "") + " " + (url or ""), pid)); n += 1
     t.commit(); print("병합", n, "건"); sys.exit()
 OUT, SRC = sys.argv[1], sys.argv[2]
 RAW = os.path.join(OUT, "raw"); DBD = os.path.join(OUT, "db")
