@@ -29,14 +29,19 @@ def get(url, timeout=60, binary=True):
 def js(url): return json.loads(get(url, binary=False))
 _rp = {}
 def allowed(url):
+    """우리 UA로 robots.txt 를 직접 받아 판정. 200=규칙 적용, 404/410=제한 없음, 그 밖의 4xx·5xx·접속 실패=보수적으로 불허"""
     h = urllib.parse.urlparse(url); base = f"{h.scheme}://{h.netloc}"
     if base not in _rp:
-        rp = urllib.robotparser.RobotFileParser(); rp.set_url(base + "/robots.txt")
-        try: rp.read()
-        except Exception: rp = None
+        rp = urllib.robotparser.RobotFileParser()
+        try:
+            r = urllib.request.urlopen(urllib.request.Request(base + "/robots.txt", headers={"User-Agent": UA}), timeout=20)
+            rp.parse(r.read(500000).decode("utf-8", "replace").splitlines())
+        except urllib.error.HTTPError as e:
+            if e.code in (404, 410): rp.parse([])
+            else: rp.disallow_all = True
+        except Exception: rp.disallow_all = True
         _rp[base] = rp
-    rp = _rp[base]
-    return True if rp is None else rp.can_fetch(UA, url)
+    return _rp[base].can_fetch(UA, url)
 def norm(s): return re.sub(r"[^0-9a-z가-힣]", "", (s or "").lower())
 def pdf_text(path):
     try: return subprocess.run(["pdftotext", "-layout", path, "-"], capture_output=True, timeout=180).stdout.decode("utf-8", "replace")
@@ -58,6 +63,8 @@ def try_pdf(pid, url, source):
         log(pid, "pdf-check", "NOTPDF", url)
     except Exception as e: log(pid, "pdf-get", "ERR", f"{url} {e}")
     return False
+if "--retry-blocked" in sys.argv:
+    db.execute("DELETE FROM fetch WHERE status='robots-blocked'"); db.commit(); print("robots-blocked 행을 지우고 다시 시도", flush=True)
 src = sqlite3.connect(SRC)
 rows = src.execute("SELECT f.paper_id,f.doi,f.url,f.kind,p.title FROM paper_fetch f JOIN paper p ON p.paper_id=f.paper_id ORDER BY f.paper_id").fetchall()
 print("대상", len(rows), "건", flush=True)
