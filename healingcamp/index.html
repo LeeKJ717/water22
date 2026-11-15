@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>한눈에 보기 · 한국V힐링캠프</title>
+<meta name="description" content="한국V힐링캠프 — 식물성 케톤식 기반 5박6일 프로그램, 약초·발효식품 프로그램, 연구 설계">
+<style>
+:root{--g:#1f6b4f;--g2:#2e8b64;--gl:#e8f4ee;--ac:#d9822b;--tx:#1d2a24;--mu:#5d6b64;--bd:#d6e3db;--bg:#f7faf8}
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+body{margin:0;font-family:"Noto Sans KR","Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;color:var(--tx);background:var(--bg);line-height:1.7;font-size:16px;counter-reset:tbl fig}
+header{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 1px 0 var(--bd)}
+.row1{display:flex;align-items:center;border-bottom:1px solid var(--bd)}
+.brand{flex:0 0 auto;display:flex;align-items:center;gap:8px;padding:8px 14px;text-decoration:none;color:var(--tx);font-weight:800;font-size:18px;letter-spacing:-.5px;white-space:nowrap}
+.brand b{color:var(--g);font-size:22px}
+.brand svg{width:28px;height:28px}
+.scroller{position:relative;flex:1 1 auto;min-width:0}
+.scroller::after{content:"";position:absolute;top:0;right:0;bottom:0;width:26px;background:linear-gradient(to right,rgba(255,255,255,0),#fff);pointer-events:none}
+.nav1,.nav2{display:flex;gap:4px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:0 26px 0 6px}
+.nav1::-webkit-scrollbar,.nav2::-webkit-scrollbar{display:none}
+.nav1 a,.nav2 a{flex:0 0 auto;text-decoration:none;color:var(--tx)}
+.nav1 a{padding:12px 12px;font-weight:700;font-size:15px;border-bottom:3px solid transparent}
+.nav1 a.on{color:var(--g);border-bottom-color:var(--g)}
+.row2{background:var(--gl)}
+.nav2 a{padding:8px 12px;font-size:14px;color:var(--mu);border-radius:14px;margin:5px 0}
+.nav2 a.on{background:var(--g);color:#fff;font-weight:700}
+.row2 .scroller::after{background:linear-gradient(to right,rgba(232,244,238,0),var(--gl))}
+main{max-width:1000px;margin:0 auto;padding:22px 16px 48px}
+h1{font-size:28px;line-height:1.3;margin:6px 0 6px;letter-spacing:-.5px}
+h1 em{font-style:normal;color:var(--g)}
+h2{font-size:21px;margin:34px 0 10px;padding-left:10px;border-left:5px solid var(--g)}
+h3{font-size:17px;margin:20px 0 6px;color:var(--g)}
+.lead{color:var(--mu);margin:0 0 16px;font-size:17px}
+p{margin:8px 0}
+ul,ol{padding-left:22px;margin:8px 0}
+li{margin:3px 0}
+.hero{background:linear-gradient(135deg,#1f6b4f,#2e8b64);color:#fff;border-radius:16px;padding:26px 22px;margin-bottom:18px}
+.hero h1{color:#fff;margin:0 0 8px}
+.hero h1 em{color:#ffd27a}
+.hero p{margin:4px 0;color:#eaf6ef}
+.hero .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn{display:inline-block;padding:11px 18px;border-radius:10px;background:var(--ac);color:#fff;text-decoration:none;font-weight:700;border:0;font-size:15px}
+.btn.alt{background:#fff;color:var(--g)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:12px 0}
+.card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:16px}
+.card h3{margin-top:0}
+.tag{display:inline-block;background:var(--gl);color:var(--g);border-radius:10px;padding:1px 9px;font-size:13px;font-weight:700;margin-right:4px}
+.note{background:#fff8ec;border:1px solid #f0d9ae;border-radius:12px;padding:12px 14px;margin:14px 0;font-size:15px}
+.warn{background:#fdf0ef;border:1px solid #efc2bd;border-radius:12px;padding:12px 14px;margin:14px 0;font-size:15px}
+.tblwrap{overflow-x:auto;margin:12px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;min-width:560px;background:#fff;font-size:15px}
+caption{caption-side:top;text-align:left;font-weight:700;padding:0 0 6px;counter-increment:tbl}
+caption::before{content:"표 " counter(tbl) ". ";color:var(--g)}
+th,td{border:1px solid var(--bd);padding:8px 10px;vertical-align:top;text-align:left}
+th{background:var(--gl);white-space:nowrap}
+td.n,th.n{white-space:nowrap}
+figure{margin:14px 0}
+figcaption{counter-increment:fig;font-weight:700;margin-top:6px;font-size:14px;color:var(--mu)}
+figcaption::before{content:"그림 " counter(fig) ". ";color:var(--g)}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.flow div{flex:1 1 130px;background:#fff;border:2px solid var(--g2);border-radius:12px;padding:10px;text-align:center;font-size:14px}
+.flow div b{display:block;color:var(--g)}
+.flow i{align-self:center;color:var(--g);font-style:normal;font-weight:800}
+.l3wrap{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:start}
+.l3tabs{display:flex;flex-direction:column;gap:6px;position:sticky;top:120px}
+.l3tabs button{font:inherit;text-align:left;padding:10px 12px;border:1px solid var(--bd);background:#fff;border-radius:10px;cursor:pointer;color:var(--tx)}
+.l3tabs button.on{background:var(--g);color:#fff;border-color:var(--g);font-weight:700}
+.panel{display:none}
+.panel.on{display:block}
+.panel>h2:first-child{margin-top:0}
+@media(max-width:760px){
+ .l3wrap{grid-template-columns:1fr}
+ .l3tabs{flex-direction:row;overflow-x:auto;white-space:nowrap;position:static;scrollbar-width:none}
+ .l3tabs button{flex:0 0 auto}
+ h1{font-size:24px}
+ .brand{font-size:16px;padding:8px 10px}
+}
+footer{border-top:1px solid var(--bd);background:#fff;padding:20px 16px;font-size:14px;color:var(--mu)}
+footer .in{max-width:1000px;margin:0 auto}
+footer b{color:var(--tx)}
+</style></head><body>
+<header><div class="row1"><a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 5h6l7 15 7-15h6L19 28h-6z" fill="#1f6b4f"/><path d="M16 17c-3-6 0-11 8-12-1 7-3 11-8 12z" fill="#7fd1a0"/></svg><span>한국<b>V</b>힐링캠프</span></a><div class="scroller"><nav class="nav1"><a href="index.html" class="on">홈</a><a href="camp12-overview.html">1박2일</a><a href="camp56-overview.html">5박6일</a><a href="herb-overview.html">약초·발효</a><a href="research-design.html">연구</a><a href="apply.html">신청·안내</a></nav></div></div><div class="row2"><div class="scroller"><nav class="nav2"><a href="index.html" class="on">한눈에 보기</a></nav></div></div></header>
+<main>
+
+<div class="hero">
+<h1>한국<em>V</em>힐링캠프</h1>
+<p>건강은 라이프스타일을 바꾸면 돌아온다</p>
+<p>식물성채식 + 케톤식 + 맨발걷기 + 부항요법 + 민간자격</p>
+<div class="cta"><a class="btn" href="apply.html">신청·문의</a><a class="btn alt" href="camp56-overview.html">5박6일 보기</a></div>
+</div>
+
+<h2>프로그램 3종</h2>
+<div class="grid">
+<div class="card"><h3>1박2일 체험</h3><p><span class="tag">주말</span><span class="tag">입문</span></p>
+<p>식물성 채식 강의 7교시, 채식 식사, 일요일 시험·채점, 채식영양전문가 자격 과정.</p><p><a href="camp12-overview.html">자세히 →</a></p></div>
+<div class="card"><h3>5박6일 집중</h3><p><span class="tag">식물성케톤식</span><span class="tag">연구</span></p>
+<p>식물성케톤식을 6일간 직접 먹고, 매일 배우고 실습합니다. 입소 첫날·마지막 날 아침 공복 채혈로 전후 변화를 측정합니다.</p><p><a href="camp56-overview.html">자세히 →</a></p></div>
+<div class="card"><h3>5박6일 + 약초·발효</h3><p><span class="tag">확장형</span><span class="tag">비교연구</span></p>
+<p>기본 프로그램에 약초와 발효식품 모듈(섭취·조리·발효 실습)을 더한 확장형. 기본형과 비교해 추가 효과를 분석합니다.</p><p><a href="herb-overview.html">자세히 →</a></p></div>
+</div>
+
+<h2>한 장 비교</h2>
+<div class="tblwrap"><table><caption>프로그램 비교</caption><thead><tr><th>구분</th><th>1박2일</th><th>5박6일 기본</th><th>5박6일 + 약초·발효</th></tr></thead><tbody><tr><td>기간</td><td>1박2일(주말)</td><td>5박6일</td><td>5박6일</td></tr><tr><td>식단</td><td>식물성 채식</td><td>식물성케톤식</td><td>식물성케톤식 + 발효식품·약초차</td></tr><tr><td>교육</td><td>강의 7교시</td><td>일 3~4개 교육 블록</td><td>기본 + 약초·발효 모듈</td></tr><tr><td>실습</td><td>채식 조리</td><td>케톤식 조리, 부항·맨발걷기, 자가측정</td><td>기본 + 발효 담그기, 템페 제조, 약초 가공</td></tr><tr><td>채혈</td><td>해당 없음</td><td>입소일·종료일 아침 공복 2회</td><td>입소일·종료일 아침 공복 2회</td></tr><tr><td>자격</td><td>채식영양전문가(희망 시)</td><td>채식영양전문가·식물성케톤식전문가 과정</td><td>기본 + 약초·발효 이수증</td></tr></tbody></table></div>
+<h2>연구 참여</h2>
+<p>5박6일 프로그램은 교육·실습과 함께 <b>전후 혈액검사</b>를 수행하고, 동의한 참가자의 비식별 자료를 통계분석해 논문으로 발표합니다. 연구 참여는 자발적이며 동의서에 서명한 경우에만 자료를 사용합니다.</p>
+<p><a href="research-design.html">연구 설계 보기 →</a></p>
+
+</main>
+<footer><div class="in"><b>한국V힐링캠프</b> · 건강은 라이프스타일을 바꾸면 돌아온다<br>
+접수 010-3377-1269 · thunder789@naver.com<br>
+본 사이트의 프로그램 내용은 교육·연구 목적의 안내이며 의학적 진단·치료를 대신하지 않습니다. 약물 복용자·만성질환자는 반드시 담당 의사와 상의 후 참여하십시오.<br>
+사이트 v1</div></footer>
+<script>
+(function(){
+ document.querySelectorAll('.nav1 a.on,.nav2 a.on').forEach(function(a){try{a.scrollIntoView({inline:'center',block:'nearest'})}catch(e){}});
+ var tabs=document.querySelectorAll('.l3tabs button');
+ tabs.forEach(function(b){b.addEventListener('click',function(){
+  tabs.forEach(function(x){x.classList.remove('on')});
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on')});
+  b.classList.add('on');
+  var p=document.getElementById(b.getAttribute('data-t'));if(p)p.classList.add('on');
+ });});
+})();
+</script></body></html>
